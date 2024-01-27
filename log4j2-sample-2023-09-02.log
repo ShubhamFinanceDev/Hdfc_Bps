@@ -1,0 +1,1244 @@
+2023-09-02T13:08:59,801 [background-preinit] INFO  (Version.java:21) - HV000001: Hibernate Validator 6.2.0.Final
+2023-09-02T13:08:59,848 [restartedMain] INFO  (StartupInfoLogger.java:55) - Starting HdfcBbpsApplication using Java 17.0.6 on DESKTOP-3E1BNCG with PID 25852 (C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master\target\classes started by USER in C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master)
+2023-09-02T13:08:59,853 [restartedMain] INFO  (SpringApplication.java:659) - No active profile set, falling back to default profiles: default
+2023-09-02T13:08:59,899 [restartedMain] INFO  (DeferredLog.java:255) - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-09-02T13:08:59,900 [restartedMain] INFO  (DeferredLog.java:255) - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-09-02T13:09:00,745 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-02T13:09:00,794 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:201) - Finished Spring Data repository scanning in 42 ms. Found 2 JPA repository interfaces.
+2023-09-02T13:09:01,386 [restartedMain] INFO  (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8443 (http)
+2023-09-02T13:09:01,397 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8443"]
+2023-09-02T13:09:01,401 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting service [Tomcat]
+2023-09-02T13:09:01,401 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.53]
+2023-09-02T13:09:01,470 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2023-09-02T13:09:01,470 [restartedMain] INFO  (ServletWebServerApplicationContext.java:290) - Root WebApplicationContext: initialization completed in 1570 ms
+2023-09-02T13:09:01,608 [restartedMain] INFO  (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-02T13:09:01,700 [restartedMain] INFO  (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.32.Final
+2023-09-02T13:09:01,838 [restartedMain] INFO  (JavaReflectionManager.java:56) - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-09-02T13:09:01,943 [restartedMain] INFO  (HikariDataSource.java:110) - HikariPool-1 - Starting...
+2023-09-02T13:09:02,087 [restartedMain] INFO  (HikariDataSource.java:123) - HikariPool-1 - Start completed.
+2023-09-02T13:09:02,100 [restartedMain] INFO  (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-09-02T13:09:02,704 [restartedMain] INFO  (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-02T13:09:02,716 [restartedMain] INFO  (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-02T13:09:03,068 [restartedMain] WARN  (AbstractApplicationContext.java:591) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'payuController': Unsatisfied dependency expressed through field 'osourceTemplate'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.jdbc.core.JdbcTemplate' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true), @org.springframework.beans.factory.annotation.Qualifier("jdbcTemplate2")}
+2023-09-02T13:09:03,069 [restartedMain] INFO  (AbstractEntityManagerFactoryBean.java:651) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-02T13:09:03,071 [restartedMain] INFO  (HikariDataSource.java:350) - HikariPool-1 - Shutdown initiated...
+2023-09-02T13:09:03,079 [restartedMain] INFO  (HikariDataSource.java:352) - HikariPool-1 - Shutdown completed.
+2023-09-02T13:09:03,081 [restartedMain] INFO  (DirectJDKLog.java:173) - Stopping service [Tomcat]
+2023-09-02T13:09:03,089 [restartedMain] INFO  (ConditionEvaluationReportLoggingListener.java:136) - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-09-02T13:09:03,105 [restartedMain] ERROR (SpringApplication.java:843) - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'payuController': Unsatisfied dependency expressed through field 'osourceTemplate'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.jdbc.core.JdbcTemplate' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true), @org.springframework.beans.factory.annotation.Qualifier("jdbcTemplate2")}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.10.jar:5.3.10]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.10.jar:5.3.10]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.5.5.jar:2.5.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) [spring-boot-2.5.5.jar:2.5.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434) [spring-boot-2.5.5.jar:2.5.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338) [spring-boot-2.5.5.jar:2.5.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) [spring-boot-2.5.5.jar:2.5.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332) [spring-boot-2.5.5.jar:2.5.5]
+	at com.shubham.bbps.HdfcBbpsApplication.main(HdfcBbpsApplication.java:24) [classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.5.5.jar:2.5.5]
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.jdbc.core.JdbcTemplate' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true), @org.springframework.beans.factory.annotation.Qualifier("jdbcTemplate2")}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1790) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1346) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657) ~[spring-beans-5.3.10.jar:5.3.10]
+	... 25 more
+2023-09-02T13:13:45,521 [background-preinit] INFO  (Version.java:21) - HV000001: Hibernate Validator 6.2.0.Final
+2023-09-02T13:13:45,555 [restartedMain] INFO  (StartupInfoLogger.java:55) - Starting HdfcBbpsApplication using Java 17.0.6 on DESKTOP-3E1BNCG with PID 27612 (C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master\target\classes started by USER in C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master)
+2023-09-02T13:13:45,559 [restartedMain] INFO  (SpringApplication.java:659) - No active profile set, falling back to default profiles: default
+2023-09-02T13:13:45,604 [restartedMain] INFO  (DeferredLog.java:255) - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-09-02T13:13:45,604 [restartedMain] INFO  (DeferredLog.java:255) - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-09-02T13:13:46,275 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-02T13:13:46,313 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:201) - Finished Spring Data repository scanning in 31 ms. Found 2 JPA repository interfaces.
+2023-09-02T13:13:46,867 [restartedMain] INFO  (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8443 (http)
+2023-09-02T13:13:46,877 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8443"]
+2023-09-02T13:13:46,878 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting service [Tomcat]
+2023-09-02T13:13:46,878 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.53]
+2023-09-02T13:13:46,941 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2023-09-02T13:13:46,941 [restartedMain] INFO  (ServletWebServerApplicationContext.java:290) - Root WebApplicationContext: initialization completed in 1336 ms
+2023-09-02T13:13:47,072 [restartedMain] INFO  (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-02T13:13:47,121 [restartedMain] INFO  (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.32.Final
+2023-09-02T13:13:47,245 [restartedMain] INFO  (JavaReflectionManager.java:56) - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-09-02T13:13:47,353 [restartedMain] ERROR (HikariConfig.java:1028) - HikariPool-1 - dataSource or dataSourceClassName or jdbcUrl is required.
+2023-09-02T13:13:47,354 [restartedMain] WARN  (JdbcEnvironmentInitiator.java:132) - HHH000342: Could not obtain connection to query metadata
+java.lang.IllegalArgumentException: dataSource or dataSourceClassName or jdbcUrl is required.
+	at com.zaxxer.hikari.HikariConfig.validate(HikariConfig.java:1029) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:109) ~[HikariCP-4.0.3.jar:?]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:176) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.10.jar:5.3.10]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.10.jar:5.3.10]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.10.jar:5.3.10]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.10.jar:5.3.10]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) [spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) [spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) [spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) [spring-context-5.3.10.jar:5.3.10]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) [spring-context-5.3.10.jar:5.3.10]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) [spring-context-5.3.10.jar:5.3.10]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) [spring-boot-2.5.5.jar:2.5.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) [spring-boot-2.5.5.jar:2.5.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434) [spring-boot-2.5.5.jar:2.5.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338) [spring-boot-2.5.5.jar:2.5.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) [spring-boot-2.5.5.jar:2.5.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332) [spring-boot-2.5.5.jar:2.5.5]
+	at com.shubham.bbps.HdfcBbpsApplication.main(HdfcBbpsApplication.java:24) [classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.5.5.jar:2.5.5]
+2023-09-02T13:13:47,372 [restartedMain] INFO  (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-09-02T13:13:47,896 [restartedMain] ERROR (HikariConfig.java:1028) - HikariPool-1 - dataSource or dataSourceClassName or jdbcUrl is required.
+2023-09-02T13:13:47,899 [restartedMain] ERROR (AbstractEntityManagerFactoryBean.java:426) - Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is java.lang.IllegalArgumentException: dataSource or dataSourceClassName or jdbcUrl is required.
+2023-09-02T13:13:47,900 [restartedMain] WARN  (AbstractApplicationContext.java:591) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is java.lang.IllegalArgumentException: dataSource or dataSourceClassName or jdbcUrl is required.
+2023-09-02T13:13:47,901 [restartedMain] INFO  (DirectJDKLog.java:173) - Stopping service [Tomcat]
+2023-09-02T13:13:47,916 [restartedMain] INFO  (ConditionEvaluationReportLoggingListener.java:136) - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-09-02T13:13:47,928 [restartedMain] ERROR (SpringApplication.java:843) - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is java.lang.IllegalArgumentException: dataSource or dataSourceClassName or jdbcUrl is required.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.10.jar:5.3.10]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.10.jar:5.3.10]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.10.jar:5.3.10]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.5.5.jar:2.5.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) [spring-boot-2.5.5.jar:2.5.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434) [spring-boot-2.5.5.jar:2.5.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338) [spring-boot-2.5.5.jar:2.5.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) [spring-boot-2.5.5.jar:2.5.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332) [spring-boot-2.5.5.jar:2.5.5]
+	at com.shubham.bbps.HdfcBbpsApplication.main(HdfcBbpsApplication.java:24) [classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.5.5.jar:2.5.5]
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is java.lang.IllegalArgumentException: dataSource or dataSourceClassName or jdbcUrl is required.
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421) ~[spring-orm-5.3.10.jar:5.3.10]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.10.jar:5.3.10]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.10.jar:5.3.10]
+	... 21 more
+Caused by: java.lang.IllegalArgumentException: dataSource or dataSourceClassName or jdbcUrl is required.
+	at com.zaxxer.hikari.HikariConfig.validate(HikariConfig.java:1029) ~[HikariCP-4.0.3.jar:?]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:109) ~[HikariCP-4.0.3.jar:?]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:43) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:60) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcDatabaseMetaData(ImprovedExtractionContextImpl.java:67) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.getTables(InformationExtractorJdbcDatabaseMetaDataImpl.java:333) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.getTablesInformation(DatabaseInformationImpl.java:120) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:65) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:207) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:114) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:184) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:318) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:468) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1259) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.10.jar:5.3.10]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.10.jar:5.3.10]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.10.jar:5.3.10]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.10.jar:5.3.10]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.10.jar:5.3.10]
+	... 21 more
+2023-09-02T13:17:45,393 [background-preinit] INFO  (Version.java:21) - HV000001: Hibernate Validator 6.2.0.Final
+2023-09-02T13:17:45,428 [restartedMain] INFO  (StartupInfoLogger.java:55) - Starting HdfcBbpsApplication using Java 17.0.6 on DESKTOP-3E1BNCG with PID 10192 (C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master\target\classes started by USER in C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master)
+2023-09-02T13:17:45,432 [restartedMain] INFO  (SpringApplication.java:659) - No active profile set, falling back to default profiles: default
+2023-09-02T13:17:45,475 [restartedMain] INFO  (DeferredLog.java:255) - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-09-02T13:17:45,475 [restartedMain] INFO  (DeferredLog.java:255) - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-09-02T13:17:46,180 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-02T13:17:46,227 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:201) - Finished Spring Data repository scanning in 42 ms. Found 2 JPA repository interfaces.
+2023-09-02T13:17:46,784 [restartedMain] INFO  (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8443 (http)
+2023-09-02T13:17:46,793 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8443"]
+2023-09-02T13:17:46,794 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting service [Tomcat]
+2023-09-02T13:17:46,795 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.53]
+2023-09-02T13:17:46,871 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2023-09-02T13:17:46,871 [restartedMain] INFO  (ServletWebServerApplicationContext.java:290) - Root WebApplicationContext: initialization completed in 1395 ms
+2023-09-02T13:17:46,983 [restartedMain] INFO  (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-02T13:17:47,028 [restartedMain] INFO  (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.32.Final
+2023-09-02T13:17:47,138 [restartedMain] INFO  (JavaReflectionManager.java:56) - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-09-02T13:17:47,238 [restartedMain] INFO  (HikariDataSource.java:110) - HikariPool-1 - Starting...
+2023-09-02T13:17:47,359 [restartedMain] INFO  (HikariDataSource.java:123) - HikariPool-1 - Start completed.
+2023-09-02T13:17:47,369 [restartedMain] INFO  (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-09-02T13:17:47,908 [restartedMain] INFO  (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-02T13:17:47,915 [restartedMain] INFO  (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-02T13:17:48,464 [restartedMain] WARN  (JpaBaseConfiguration.java:219) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-02T13:17:48,671 [restartedMain] INFO  (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
+2023-09-02T13:17:48,814 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8443"]
+2023-09-02T13:17:48,902 [restartedMain] INFO  (TomcatWebServer.java:220) - Tomcat started on port(s): 8443 (http) with context path ''
+2023-09-02T13:17:49,142 [restartedMain] INFO  (StartupInfoLogger.java:61) - Started HdfcBbpsApplication in 3.994 seconds (JVM running for 4.593)
+2023-09-02T13:18:44,351 [Thread-4] INFO  (AbstractEntityManagerFactoryBean.java:651) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-02T13:18:44,353 [Thread-4] INFO  (HikariDataSource.java:350) - HikariPool-1 - Shutdown initiated...
+2023-09-02T13:18:44,363 [Thread-4] INFO  (HikariDataSource.java:352) - HikariPool-1 - Shutdown completed.
+2023-09-02T13:18:44,439 [restartedMain] INFO  (StartupInfoLogger.java:55) - Starting HdfcBbpsApplication using Java 17.0.6 on DESKTOP-3E1BNCG with PID 10192 (C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master\target\classes started by USER in C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master)
+2023-09-02T13:18:44,439 [restartedMain] INFO  (SpringApplication.java:659) - No active profile set, falling back to default profiles: default
+2023-09-02T13:18:44,640 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-02T13:18:44,651 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:201) - Finished Spring Data repository scanning in 10 ms. Found 2 JPA repository interfaces.
+2023-09-02T13:18:44,713 [restartedMain] INFO  (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8443 (http)
+2023-09-02T13:18:44,713 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8443"]
+2023-09-02T13:18:44,714 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting service [Tomcat]
+2023-09-02T13:18:44,714 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.53]
+2023-09-02T13:18:44,727 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2023-09-02T13:18:44,727 [restartedMain] INFO  (ServletWebServerApplicationContext.java:290) - Root WebApplicationContext: initialization completed in 286 ms
+2023-09-02T13:18:44,751 [restartedMain] INFO  (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-02T13:18:44,754 [restartedMain] INFO  (HikariDataSource.java:110) - HikariPool-2 - Starting...
+2023-09-02T13:18:44,758 [restartedMain] INFO  (HikariDataSource.java:123) - HikariPool-2 - Start completed.
+2023-09-02T13:18:44,759 [restartedMain] INFO  (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-09-02T13:18:44,828 [restartedMain] INFO  (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-02T13:18:44,828 [restartedMain] INFO  (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-02T13:18:44,934 [restartedMain] WARN  (JpaBaseConfiguration.java:219) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-02T13:18:44,973 [restartedMain] INFO  (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
+2023-09-02T13:18:45,002 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8443"]
+2023-09-02T13:18:45,004 [restartedMain] INFO  (TomcatWebServer.java:220) - Tomcat started on port(s): 8443 (http) with context path ''
+2023-09-02T13:18:45,062 [restartedMain] INFO  (StartupInfoLogger.java:61) - Started HdfcBbpsApplication in 0.649 seconds (JVM running for 60.514)
+2023-09-02T13:18:45,064 [restartedMain] INFO  (ConditionEvaluationDeltaLoggingListener.java:63) - Condition evaluation unchanged
+2023-09-02T13:18:58,367 [background-preinit] INFO  (Version.java:21) - HV000001: Hibernate Validator 6.2.0.Final
+2023-09-02T13:18:58,401 [restartedMain] INFO  (StartupInfoLogger.java:55) - Starting HdfcBbpsApplication using Java 17.0.6 on DESKTOP-3E1BNCG with PID 23592 (C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master\target\classes started by USER in C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master)
+2023-09-02T13:18:58,404 [restartedMain] INFO  (SpringApplication.java:659) - No active profile set, falling back to default profiles: default
+2023-09-02T13:18:58,447 [restartedMain] INFO  (DeferredLog.java:255) - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-09-02T13:18:58,448 [restartedMain] INFO  (DeferredLog.java:255) - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-09-02T13:18:59,144 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-02T13:18:59,193 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:201) - Finished Spring Data repository scanning in 40 ms. Found 2 JPA repository interfaces.
+2023-09-02T13:18:59,749 [restartedMain] INFO  (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8443 (http)
+2023-09-02T13:18:59,763 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8443"]
+2023-09-02T13:18:59,763 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting service [Tomcat]
+2023-09-02T13:18:59,764 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.53]
+2023-09-02T13:18:59,833 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2023-09-02T13:18:59,834 [restartedMain] INFO  (ServletWebServerApplicationContext.java:290) - Root WebApplicationContext: initialization completed in 1386 ms
+2023-09-02T13:18:59,949 [restartedMain] INFO  (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-02T13:18:59,993 [restartedMain] INFO  (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.32.Final
+2023-09-02T13:19:00,099 [restartedMain] INFO  (JavaReflectionManager.java:56) - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-09-02T13:19:00,196 [restartedMain] INFO  (HikariDataSource.java:110) - HikariPool-1 - Starting...
+2023-09-02T13:19:00,316 [restartedMain] INFO  (HikariDataSource.java:123) - HikariPool-1 - Start completed.
+2023-09-02T13:19:00,327 [restartedMain] INFO  (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-09-02T13:19:00,883 [restartedMain] INFO  (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-02T13:19:00,890 [restartedMain] INFO  (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-02T13:19:01,406 [restartedMain] WARN  (JpaBaseConfiguration.java:219) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-02T13:19:01,606 [restartedMain] INFO  (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
+2023-09-02T13:19:01,737 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8443"]
+2023-09-02T13:19:01,778 [restartedMain] INFO  (TomcatWebServer.java:220) - Tomcat started on port(s): 8443 (http) with context path ''
+2023-09-02T13:19:02,005 [restartedMain] INFO  (StartupInfoLogger.java:61) - Started HdfcBbpsApplication in 3.881 seconds (JVM running for 4.502)
+2023-09-02T13:19:19,142 [http-nio-8443-exec-1] INFO  (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-02T13:19:19,143 [http-nio-8443-exec-1] INFO  (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+2023-09-02T13:19:19,144 [http-nio-8443-exec-1] INFO  (FrameworkServlet.java:547) - Completed initialization in 1 ms
+2023-09-02T13:19:19,162 [http-nio-8443-exec-1] INFO  (IndexController.java:21) - inside IndexController
+2023-09-02T13:23:54,165 [background-preinit] INFO  (Version.java:21) - HV000001: Hibernate Validator 6.2.0.Final
+2023-09-02T13:23:54,209 [restartedMain] INFO  (StartupInfoLogger.java:55) - Starting HdfcBbpsApplication using Java 17.0.6 on DESKTOP-3E1BNCG with PID 12056 (C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master\target\classes started by USER in C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master)
+2023-09-02T13:23:54,214 [restartedMain] INFO  (SpringApplication.java:659) - No active profile set, falling back to default profiles: default
+2023-09-02T13:23:54,257 [restartedMain] INFO  (DeferredLog.java:255) - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-09-02T13:23:54,257 [restartedMain] INFO  (DeferredLog.java:255) - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-09-02T13:23:54,958 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-02T13:23:55,004 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:201) - Finished Spring Data repository scanning in 39 ms. Found 2 JPA repository interfaces.
+2023-09-02T13:23:55,516 [restartedMain] INFO  (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8443 (http)
+2023-09-02T13:23:55,525 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8443"]
+2023-09-02T13:23:55,526 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting service [Tomcat]
+2023-09-02T13:23:55,526 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.53]
+2023-09-02T13:23:55,598 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2023-09-02T13:23:55,598 [restartedMain] INFO  (ServletWebServerApplicationContext.java:290) - Root WebApplicationContext: initialization completed in 1341 ms
+2023-09-02T13:23:55,705 [restartedMain] INFO  (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-02T13:23:55,754 [restartedMain] INFO  (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.32.Final
+2023-09-02T13:23:55,859 [restartedMain] INFO  (JavaReflectionManager.java:56) - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-09-02T13:23:55,972 [restartedMain] INFO  (HikariDataSource.java:110) - HikariPool-1 - Starting...
+2023-09-02T13:23:56,091 [restartedMain] INFO  (HikariDataSource.java:123) - HikariPool-1 - Start completed.
+2023-09-02T13:23:56,102 [restartedMain] INFO  (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-09-02T13:23:56,638 [restartedMain] INFO  (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-02T13:23:56,646 [restartedMain] INFO  (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-02T13:23:57,184 [restartedMain] WARN  (JpaBaseConfiguration.java:219) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-02T13:23:57,390 [restartedMain] INFO  (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
+2023-09-02T13:23:57,520 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8443"]
+2023-09-02T13:23:57,560 [restartedMain] INFO  (TomcatWebServer.java:220) - Tomcat started on port(s): 8443 (http) with context path ''
+2023-09-02T13:23:57,788 [restartedMain] INFO  (StartupInfoLogger.java:61) - Started HdfcBbpsApplication in 3.863 seconds (JVM running for 4.457)
+2023-09-02T13:24:19,378 [http-nio-8443-exec-1] INFO  (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-02T13:24:19,378 [http-nio-8443-exec-1] INFO  (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+2023-09-02T13:24:19,379 [http-nio-8443-exec-1] INFO  (FrameworkServlet.java:547) - Completed initialization in 1 ms
+2023-09-02T13:32:50,339 [http-nio-8443-exec-7] WARN  (BCryptPasswordEncoder.java:85) - Empty encoded password
+2023-09-02T13:32:50,339 [http-nio-8443-exec-7] ERROR (payuController.java:84) - com.shubham.bbps.dto.Error@5890c300
+2023-09-02T13:33:37,719 [http-nio-8443-exec-9] INFO  (IndexController.java:21) - inside IndexController
+2023-09-02T13:34:04,599 [http-nio-8443-exec-3] ERROR (HikariConfig.java:1028) - HikariPool-2 - dataSource or dataSourceClassName or jdbcUrl is required.
+2023-09-02T13:34:04,600 [http-nio-8443-exec-3] ERROR (payuController.java:173) - dataSource or dataSourceClassName or jdbcUrl is required.com.shubham.bbps.dto.Error@631b4682
+2023-09-02T13:34:08,024 [http-nio-8443-exec-5] ERROR (HikariConfig.java:1028) - HikariPool-2 - dataSource or dataSourceClassName or jdbcUrl is required.
+2023-09-02T13:34:08,025 [http-nio-8443-exec-5] ERROR (payuController.java:173) - dataSource or dataSourceClassName or jdbcUrl is required.com.shubham.bbps.dto.Error@3c7c8e86
+2023-09-02T13:49:21,695 [http-nio-8443-exec-8] ERROR (HikariConfig.java:1028) - HikariPool-2 - dataSource or dataSourceClassName or jdbcUrl is required.
+2023-09-02T13:49:21,698 [http-nio-8443-exec-8] ERROR (payuController.java:173) - dataSource or dataSourceClassName or jdbcUrl is required.com.shubham.bbps.dto.Error@6148c62e
+2023-09-02T13:49:23,364 [http-nio-8443-exec-7] ERROR (HikariConfig.java:1028) - HikariPool-2 - dataSource or dataSourceClassName or jdbcUrl is required.
+2023-09-02T13:49:23,364 [http-nio-8443-exec-7] ERROR (payuController.java:173) - dataSource or dataSourceClassName or jdbcUrl is required.com.shubham.bbps.dto.Error@45020d47
+2023-09-02T13:55:35,122 [main] INFO  (AbstractTestContextBootstrapper.java:305) - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.shubham.bbps.EasyNotesApplicationTests], using SpringBootContextLoader
+2023-09-02T13:55:35,130 [main] INFO  (AbstractContextLoader.java:264) - Could not detect default resource locations for test class [com.shubham.bbps.EasyNotesApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2023-09-02T13:55:35,131 [main] INFO  (AnnotationConfigContextLoaderUtils.java:83) - Could not detect default configuration classes for test class [com.shubham.bbps.EasyNotesApplicationTests]: EasyNotesApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-09-02T13:55:35,230 [main] INFO  (SpringBootTestContextBootstrapper.java:238) - Found @SpringBootConfiguration com.shubham.bbps.HdfcBbpsApplication for test class com.shubham.bbps.EasyNotesApplicationTests
+2023-09-02T13:55:35,305 [main] INFO  (AbstractTestContextBootstrapper.java:245) - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2023-09-02T13:55:35,317 [main] INFO  (AbstractTestContextBootstrapper.java:174) - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7dcc91fd, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@66eb985d, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@6a9287b1, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@75504cef, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6c8a68c1, org.springframework.test.context.support.DirtiesContextTestExecutionListener@56193c7d, org.springframework.test.context.transaction.TransactionalTestExecutionListener@28c88600, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5f8890c2, org.springframework.test.context.event.EventPublishingTestExecutionListener@607b2792, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7f9e1534, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@138a7441, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@81ff872, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@31611954, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3e598df9, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@7e31ce0f]
+2023-09-02T13:55:35,514 [background-preinit] INFO  (Version.java:21) - HV000001: Hibernate Validator 6.2.0.Final
+2023-09-02T13:55:35,569 [main] INFO  (StartupInfoLogger.java:55) - Starting EasyNotesApplicationTests using Java 17.0.6 on DESKTOP-3E1BNCG with PID 31616 (started by USER in C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master)
+2023-09-02T13:55:35,573 [main] INFO  (SpringApplication.java:659) - No active profile set, falling back to default profiles: default
+2023-09-02T13:55:36,325 [main] INFO  (RepositoryConfigurationDelegate.java:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-02T13:55:36,368 [main] INFO  (RepositoryConfigurationDelegate.java:201) - Finished Spring Data repository scanning in 35 ms. Found 2 JPA repository interfaces.
+2023-09-02T13:55:36,827 [main] INFO  (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-02T13:55:36,874 [main] INFO  (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.32.Final
+2023-09-02T13:55:36,989 [main] INFO  (JavaReflectionManager.java:56) - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-09-02T13:55:37,129 [main] INFO  (HikariDataSource.java:110) - HikariPool-1 - Starting...
+2023-09-02T13:55:37,262 [main] INFO  (HikariDataSource.java:123) - HikariPool-1 - Start completed.
+2023-09-02T13:55:37,273 [main] INFO  (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-09-02T13:55:37,768 [main] INFO  (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-02T13:55:37,776 [main] INFO  (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-02T13:55:38,486 [main] WARN  (JpaBaseConfiguration.java:219) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-02T13:55:39,424 [main] INFO  (StartupInfoLogger.java:61) - Started EasyNotesApplicationTests in 4.072 seconds (JVM running for 5.112)
+2023-09-02T13:55:39,605 [SpringApplicationShutdownHook] INFO  (AbstractEntityManagerFactoryBean.java:651) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-02T13:55:39,608 [SpringApplicationShutdownHook] INFO  (HikariDataSource.java:350) - HikariPool-1 - Shutdown initiated...
+2023-09-02T13:55:39,616 [SpringApplicationShutdownHook] INFO  (HikariDataSource.java:352) - HikariPool-1 - Shutdown completed.
+2023-09-02T13:56:08,377 [background-preinit] INFO  (Version.java:21) - HV000001: Hibernate Validator 6.2.0.Final
+2023-09-02T13:56:08,418 [restartedMain] INFO  (StartupInfoLogger.java:55) - Starting HdfcBbpsApplication using Java 17.0.6 on DESKTOP-3E1BNCG with PID 22724 (C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master\target\classes started by USER in C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master)
+2023-09-02T13:56:08,421 [restartedMain] INFO  (SpringApplication.java:659) - No active profile set, falling back to default profiles: default
+2023-09-02T13:56:08,466 [restartedMain] INFO  (DeferredLog.java:255) - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-09-02T13:56:08,466 [restartedMain] INFO  (DeferredLog.java:255) - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-09-02T13:56:09,249 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-02T13:56:09,295 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:201) - Finished Spring Data repository scanning in 38 ms. Found 2 JPA repository interfaces.
+2023-09-02T13:56:09,827 [restartedMain] INFO  (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8443 (http)
+2023-09-02T13:56:09,837 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8443"]
+2023-09-02T13:56:09,838 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting service [Tomcat]
+2023-09-02T13:56:09,838 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.53]
+2023-09-02T13:56:09,901 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2023-09-02T13:56:09,901 [restartedMain] INFO  (ServletWebServerApplicationContext.java:290) - Root WebApplicationContext: initialization completed in 1434 ms
+2023-09-02T13:56:10,015 [restartedMain] INFO  (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-02T13:56:10,064 [restartedMain] INFO  (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.32.Final
+2023-09-02T13:56:10,171 [restartedMain] INFO  (JavaReflectionManager.java:56) - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-09-02T13:56:10,262 [restartedMain] INFO  (HikariDataSource.java:110) - HikariPool-1 - Starting...
+2023-09-02T13:56:10,405 [restartedMain] INFO  (HikariDataSource.java:123) - HikariPool-1 - Start completed.
+2023-09-02T13:56:10,416 [restartedMain] INFO  (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-09-02T13:56:10,933 [restartedMain] INFO  (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-02T13:56:10,942 [restartedMain] INFO  (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-02T13:56:11,478 [restartedMain] WARN  (JpaBaseConfiguration.java:219) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-02T13:56:11,673 [restartedMain] INFO  (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
+2023-09-02T13:56:11,795 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8443"]
+2023-09-02T13:56:11,851 [restartedMain] INFO  (TomcatWebServer.java:220) - Tomcat started on port(s): 8443 (http) with context path ''
+2023-09-02T13:56:12,077 [restartedMain] INFO  (StartupInfoLogger.java:61) - Started HdfcBbpsApplication in 3.903 seconds (JVM running for 4.834)
+2023-09-02T13:56:19,045 [http-nio-8443-exec-2] INFO  (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-02T13:56:19,045 [http-nio-8443-exec-2] INFO  (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+2023-09-02T13:56:19,046 [http-nio-8443-exec-2] INFO  (FrameworkServlet.java:547) - Completed initialization in 1 ms
+2023-09-02T13:56:19,182 [http-nio-8443-exec-2] INFO  (HikariDataSource.java:110) - HikariPool-2 - Starting...
+2023-09-02T13:56:19,186 [http-nio-8443-exec-2] INFO  (HikariDataSource.java:123) - HikariPool-2 - Start completed.
+2023-09-02T13:56:19,225 [http-nio-8443-exec-2] ERROR (payuController.java:173) - Cannot invoke "com.shubham.bbps.dto.PayuFetchResponse.getPayuFetch()" because "actor" is nullcom.shubham.bbps.dto.Error@33c752f9
+2023-09-02T13:56:21,122 [http-nio-8443-exec-3] ERROR (payuController.java:173) - Cannot invoke "com.shubham.bbps.dto.PayuFetchResponse.getPayuFetch()" because "actor" is nullcom.shubham.bbps.dto.Error@5a93ecd5
+2023-09-02T13:58:04,341 [Thread-4] INFO  (HikariDataSource.java:350) - HikariPool-2 - Shutdown initiated...
+2023-09-02T13:58:04,347 [Thread-4] INFO  (HikariDataSource.java:352) - HikariPool-2 - Shutdown completed.
+2023-09-02T13:58:04,348 [Thread-4] INFO  (AbstractEntityManagerFactoryBean.java:651) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-02T13:58:04,349 [Thread-4] INFO  (HikariDataSource.java:350) - HikariPool-1 - Shutdown initiated...
+2023-09-02T13:58:04,351 [Thread-4] INFO  (HikariDataSource.java:352) - HikariPool-1 - Shutdown completed.
+2023-09-02T13:58:04,408 [restartedMain] INFO  (StartupInfoLogger.java:55) - Starting HdfcBbpsApplication using Java 17.0.6 on DESKTOP-3E1BNCG with PID 22724 (C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master\target\classes started by USER in C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master)
+2023-09-02T13:58:04,409 [restartedMain] INFO  (SpringApplication.java:659) - No active profile set, falling back to default profiles: default
+2023-09-02T13:58:04,614 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-02T13:58:04,624 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:201) - Finished Spring Data repository scanning in 9 ms. Found 2 JPA repository interfaces.
+2023-09-02T13:58:04,700 [restartedMain] INFO  (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8443 (http)
+2023-09-02T13:58:04,700 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8443"]
+2023-09-02T13:58:04,701 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting service [Tomcat]
+2023-09-02T13:58:04,701 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.53]
+2023-09-02T13:58:04,714 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2023-09-02T13:58:04,714 [restartedMain] INFO  (ServletWebServerApplicationContext.java:290) - Root WebApplicationContext: initialization completed in 303 ms
+2023-09-02T13:58:04,734 [restartedMain] INFO  (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-02T13:58:04,737 [restartedMain] INFO  (HikariDataSource.java:110) - HikariPool-3 - Starting...
+2023-09-02T13:58:04,741 [restartedMain] INFO  (HikariDataSource.java:123) - HikariPool-3 - Start completed.
+2023-09-02T13:58:04,741 [restartedMain] INFO  (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-09-02T13:58:04,822 [restartedMain] INFO  (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-02T13:58:04,823 [restartedMain] INFO  (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-02T13:58:04,944 [restartedMain] WARN  (JpaBaseConfiguration.java:219) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-02T13:58:04,995 [restartedMain] INFO  (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
+2023-09-02T13:58:05,028 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8443"]
+2023-09-02T13:58:05,032 [restartedMain] INFO  (TomcatWebServer.java:220) - Tomcat started on port(s): 8443 (http) with context path ''
+2023-09-02T13:58:05,096 [restartedMain] INFO  (StartupInfoLogger.java:61) - Started HdfcBbpsApplication in 0.713 seconds (JVM running for 117.854)
+2023-09-02T13:58:05,098 [restartedMain] INFO  (ConditionEvaluationDeltaLoggingListener.java:63) - Condition evaluation unchanged
+2023-09-02T13:58:06,470 [Thread-7] INFO  (AbstractEntityManagerFactoryBean.java:651) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-02T13:58:06,471 [Thread-7] INFO  (HikariDataSource.java:350) - HikariPool-3 - Shutdown initiated...
+2023-09-02T13:58:06,474 [Thread-7] INFO  (HikariDataSource.java:352) - HikariPool-3 - Shutdown completed.
+2023-09-02T13:58:06,526 [restartedMain] INFO  (StartupInfoLogger.java:55) - Starting HdfcBbpsApplication using Java 17.0.6 on DESKTOP-3E1BNCG with PID 22724 (C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master\target\classes started by USER in C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master)
+2023-09-02T13:58:06,527 [restartedMain] INFO  (SpringApplication.java:659) - No active profile set, falling back to default profiles: default
+2023-09-02T13:58:06,702 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-02T13:58:06,713 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:201) - Finished Spring Data repository scanning in 9 ms. Found 2 JPA repository interfaces.
+2023-09-02T13:58:06,765 [restartedMain] INFO  (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8443 (http)
+2023-09-02T13:58:06,766 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8443"]
+2023-09-02T13:58:06,766 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting service [Tomcat]
+2023-09-02T13:58:06,766 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.53]
+2023-09-02T13:58:06,778 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2023-09-02T13:58:06,779 [restartedMain] INFO  (ServletWebServerApplicationContext.java:290) - Root WebApplicationContext: initialization completed in 250 ms
+2023-09-02T13:58:06,795 [restartedMain] INFO  (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-02T13:58:06,800 [restartedMain] INFO  (HikariDataSource.java:110) - HikariPool-4 - Starting...
+2023-09-02T13:58:06,802 [restartedMain] INFO  (HikariDataSource.java:123) - HikariPool-4 - Start completed.
+2023-09-02T13:58:06,803 [restartedMain] INFO  (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-09-02T13:58:06,857 [restartedMain] INFO  (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-02T13:58:06,857 [restartedMain] INFO  (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-02T13:58:06,948 [restartedMain] WARN  (JpaBaseConfiguration.java:219) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-02T13:58:06,980 [restartedMain] INFO  (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
+2023-09-02T13:58:07,004 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8443"]
+2023-09-02T13:58:07,006 [restartedMain] INFO  (TomcatWebServer.java:220) - Tomcat started on port(s): 8443 (http) with context path ''
+2023-09-02T13:58:07,051 [restartedMain] INFO  (StartupInfoLogger.java:61) - Started HdfcBbpsApplication in 0.546 seconds (JVM running for 119.809)
+2023-09-02T13:58:07,052 [restartedMain] INFO  (ConditionEvaluationDeltaLoggingListener.java:63) - Condition evaluation unchanged
+2023-09-02T13:58:13,844 [http-nio-8443-exec-2] INFO  (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-02T13:58:13,844 [http-nio-8443-exec-2] INFO  (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+2023-09-02T13:58:13,845 [http-nio-8443-exec-2] INFO  (FrameworkServlet.java:547) - Completed initialization in 1 ms
+2023-09-02T13:58:13,919 [http-nio-8443-exec-2] INFO  (HikariDataSource.java:110) - HikariPool-5 - Starting...
+2023-09-02T13:58:13,922 [http-nio-8443-exec-2] INFO  (HikariDataSource.java:123) - HikariPool-5 - Start completed.
+2023-09-02T13:58:13,924 [http-nio-8443-exec-2] ERROR (payuController.java:172) - Cannot invoke "com.shubham.bbps.dto.PayuFetchResponse.getPayuFetch()" because "actor" is nullcom.shubham.bbps.dto.Error@8033b7e
+2023-09-02T14:00:14,895 [http-nio-8443-exec-5] ERROR (payuController.java:172) - Cannot invoke "String.equalsIgnoreCase(String)" because the return value of "com.shubham.bbps.dto.PayuFetchResponse.getStatus()" is nullcom.shubham.bbps.dto.Error@19d39101
+2023-09-02T14:00:16,536 [http-nio-8443-exec-6] ERROR (payuController.java:172) - Cannot invoke "String.equalsIgnoreCase(String)" because the return value of "com.shubham.bbps.dto.PayuFetchResponse.getStatus()" is nullcom.shubham.bbps.dto.Error@2057c3a8
+2023-09-02T14:00:26,998 [http-nio-8443-exec-7] ERROR (payuController.java:172) - Cannot invoke "String.equalsIgnoreCase(String)" because the return value of "com.shubham.bbps.dto.PayuFetchResponse.getStatus()" is nullcom.shubham.bbps.dto.Error@7928da1a
+2023-09-02T14:02:03,064 [Thread-11] INFO  (HikariDataSource.java:350) - HikariPool-5 - Shutdown initiated...
+2023-09-02T14:02:03,066 [Thread-11] INFO  (HikariDataSource.java:352) - HikariPool-5 - Shutdown completed.
+2023-09-02T14:02:03,066 [Thread-11] INFO  (AbstractEntityManagerFactoryBean.java:651) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-02T14:02:03,066 [Thread-11] INFO  (HikariDataSource.java:350) - HikariPool-4 - Shutdown initiated...
+2023-09-02T14:02:03,069 [Thread-11] INFO  (HikariDataSource.java:352) - HikariPool-4 - Shutdown completed.
+2023-09-02T14:02:03,120 [restartedMain] INFO  (StartupInfoLogger.java:55) - Starting HdfcBbpsApplication using Java 17.0.6 on DESKTOP-3E1BNCG with PID 22724 (C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master\target\classes started by USER in C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master)
+2023-09-02T14:02:03,121 [restartedMain] INFO  (SpringApplication.java:659) - No active profile set, falling back to default profiles: default
+2023-09-02T14:02:03,281 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-02T14:02:03,292 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:201) - Finished Spring Data repository scanning in 10 ms. Found 2 JPA repository interfaces.
+2023-09-02T14:02:03,344 [restartedMain] INFO  (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8443 (http)
+2023-09-02T14:02:03,345 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8443"]
+2023-09-02T14:02:03,345 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting service [Tomcat]
+2023-09-02T14:02:03,345 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.53]
+2023-09-02T14:02:03,356 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2023-09-02T14:02:03,356 [restartedMain] INFO  (ServletWebServerApplicationContext.java:290) - Root WebApplicationContext: initialization completed in 234 ms
+2023-09-02T14:02:03,376 [restartedMain] INFO  (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-02T14:02:03,379 [restartedMain] INFO  (HikariDataSource.java:110) - HikariPool-6 - Starting...
+2023-09-02T14:02:03,383 [restartedMain] INFO  (HikariDataSource.java:123) - HikariPool-6 - Start completed.
+2023-09-02T14:02:03,383 [restartedMain] INFO  (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-09-02T14:02:03,441 [restartedMain] INFO  (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-02T14:02:03,442 [restartedMain] INFO  (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-02T14:02:03,526 [restartedMain] WARN  (JpaBaseConfiguration.java:219) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-02T14:02:03,559 [restartedMain] INFO  (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
+2023-09-02T14:02:03,581 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8443"]
+2023-09-02T14:02:03,583 [restartedMain] INFO  (TomcatWebServer.java:220) - Tomcat started on port(s): 8443 (http) with context path ''
+2023-09-02T14:02:03,627 [restartedMain] INFO  (StartupInfoLogger.java:61) - Started HdfcBbpsApplication in 0.528 seconds (JVM running for 356.385)
+2023-09-02T14:02:03,628 [restartedMain] INFO  (ConditionEvaluationDeltaLoggingListener.java:63) - Condition evaluation unchanged
+2023-09-02T14:02:16,256 [Thread-15] INFO  (AbstractEntityManagerFactoryBean.java:651) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-02T14:02:16,256 [Thread-15] INFO  (HikariDataSource.java:350) - HikariPool-6 - Shutdown initiated...
+2023-09-02T14:02:16,259 [Thread-15] INFO  (HikariDataSource.java:352) - HikariPool-6 - Shutdown completed.
+2023-09-02T14:02:16,306 [restartedMain] INFO  (StartupInfoLogger.java:55) - Starting HdfcBbpsApplication using Java 17.0.6 on DESKTOP-3E1BNCG with PID 22724 (C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master\target\classes started by USER in C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master)
+2023-09-02T14:02:16,307 [restartedMain] INFO  (SpringApplication.java:659) - No active profile set, falling back to default profiles: default
+2023-09-02T14:02:16,461 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-02T14:02:16,470 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:201) - Finished Spring Data repository scanning in 8 ms. Found 2 JPA repository interfaces.
+2023-09-02T14:02:16,524 [restartedMain] INFO  (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8443 (http)
+2023-09-02T14:02:16,525 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8443"]
+2023-09-02T14:02:16,525 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting service [Tomcat]
+2023-09-02T14:02:16,526 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.53]
+2023-09-02T14:02:16,536 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2023-09-02T14:02:16,536 [restartedMain] INFO  (ServletWebServerApplicationContext.java:290) - Root WebApplicationContext: initialization completed in 228 ms
+2023-09-02T14:02:16,555 [restartedMain] INFO  (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-02T14:02:16,558 [restartedMain] INFO  (HikariDataSource.java:110) - HikariPool-7 - Starting...
+2023-09-02T14:02:16,560 [restartedMain] INFO  (HikariDataSource.java:123) - HikariPool-7 - Start completed.
+2023-09-02T14:02:16,560 [restartedMain] INFO  (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-09-02T14:02:16,615 [restartedMain] INFO  (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-02T14:02:16,616 [restartedMain] INFO  (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-02T14:02:16,693 [restartedMain] WARN  (JpaBaseConfiguration.java:219) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-02T14:02:16,728 [restartedMain] INFO  (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
+2023-09-02T14:02:16,751 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8443"]
+2023-09-02T14:02:16,752 [restartedMain] INFO  (TomcatWebServer.java:220) - Tomcat started on port(s): 8443 (http) with context path ''
+2023-09-02T14:02:16,791 [restartedMain] INFO  (StartupInfoLogger.java:61) - Started HdfcBbpsApplication in 0.503 seconds (JVM running for 369.548)
+2023-09-02T14:02:16,792 [restartedMain] INFO  (ConditionEvaluationDeltaLoggingListener.java:63) - Condition evaluation unchanged
+2023-09-02T14:02:29,416 [Thread-19] INFO  (AbstractEntityManagerFactoryBean.java:651) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-02T14:02:29,416 [Thread-19] INFO  (HikariDataSource.java:350) - HikariPool-7 - Shutdown initiated...
+2023-09-02T14:02:29,418 [Thread-19] INFO  (HikariDataSource.java:352) - HikariPool-7 - Shutdown completed.
+2023-09-02T14:02:29,464 [restartedMain] INFO  (StartupInfoLogger.java:55) - Starting HdfcBbpsApplication using Java 17.0.6 on DESKTOP-3E1BNCG with PID 22724 (C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master\target\classes started by USER in C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master)
+2023-09-02T14:02:29,465 [restartedMain] INFO  (SpringApplication.java:659) - No active profile set, falling back to default profiles: default
+2023-09-02T14:02:29,640 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-02T14:02:29,649 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:201) - Finished Spring Data repository scanning in 8 ms. Found 2 JPA repository interfaces.
+2023-09-02T14:02:29,705 [restartedMain] INFO  (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8443 (http)
+2023-09-02T14:02:29,706 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8443"]
+2023-09-02T14:02:29,707 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting service [Tomcat]
+2023-09-02T14:02:29,707 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.53]
+2023-09-02T14:02:29,717 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2023-09-02T14:02:29,717 [restartedMain] INFO  (ServletWebServerApplicationContext.java:290) - Root WebApplicationContext: initialization completed in 250 ms
+2023-09-02T14:02:29,734 [restartedMain] INFO  (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-02T14:02:29,738 [restartedMain] INFO  (HikariDataSource.java:110) - HikariPool-8 - Starting...
+2023-09-02T14:02:29,740 [restartedMain] INFO  (HikariDataSource.java:123) - HikariPool-8 - Start completed.
+2023-09-02T14:02:29,741 [restartedMain] INFO  (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-09-02T14:02:29,793 [restartedMain] INFO  (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-02T14:02:29,794 [restartedMain] INFO  (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-02T14:02:29,870 [restartedMain] WARN  (JpaBaseConfiguration.java:219) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-02T14:02:29,903 [restartedMain] INFO  (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
+2023-09-02T14:02:29,924 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8443"]
+2023-09-02T14:02:29,926 [restartedMain] INFO  (TomcatWebServer.java:220) - Tomcat started on port(s): 8443 (http) with context path ''
+2023-09-02T14:02:29,965 [restartedMain] INFO  (StartupInfoLogger.java:61) - Started HdfcBbpsApplication in 0.517 seconds (JVM running for 382.722)
+2023-09-02T14:02:29,966 [restartedMain] INFO  (ConditionEvaluationDeltaLoggingListener.java:63) - Condition evaluation unchanged
+2023-09-02T14:02:42,588 [Thread-23] INFO  (AbstractEntityManagerFactoryBean.java:651) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-02T14:02:42,589 [Thread-23] INFO  (HikariDataSource.java:350) - HikariPool-8 - Shutdown initiated...
+2023-09-02T14:02:42,591 [Thread-23] INFO  (HikariDataSource.java:352) - HikariPool-8 - Shutdown completed.
+2023-09-02T14:02:42,641 [restartedMain] INFO  (StartupInfoLogger.java:55) - Starting HdfcBbpsApplication using Java 17.0.6 on DESKTOP-3E1BNCG with PID 22724 (C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master\target\classes started by USER in C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master)
+2023-09-02T14:02:42,641 [restartedMain] INFO  (SpringApplication.java:659) - No active profile set, falling back to default profiles: default
+2023-09-02T14:02:42,807 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-02T14:02:42,816 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:201) - Finished Spring Data repository scanning in 8 ms. Found 2 JPA repository interfaces.
+2023-09-02T14:02:42,863 [restartedMain] INFO  (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8443 (http)
+2023-09-02T14:02:42,863 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8443"]
+2023-09-02T14:02:42,864 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting service [Tomcat]
+2023-09-02T14:02:42,864 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.53]
+2023-09-02T14:02:42,875 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2023-09-02T14:02:42,875 [restartedMain] INFO  (ServletWebServerApplicationContext.java:290) - Root WebApplicationContext: initialization completed in 232 ms
+2023-09-02T14:02:42,892 [restartedMain] INFO  (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-02T14:02:42,894 [restartedMain] INFO  (HikariDataSource.java:110) - HikariPool-9 - Starting...
+2023-09-02T14:02:42,897 [restartedMain] INFO  (HikariDataSource.java:123) - HikariPool-9 - Start completed.
+2023-09-02T14:02:42,898 [restartedMain] INFO  (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-09-02T14:02:42,950 [restartedMain] INFO  (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-02T14:02:42,950 [restartedMain] INFO  (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-02T14:02:43,024 [restartedMain] WARN  (JpaBaseConfiguration.java:219) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-02T14:02:43,054 [restartedMain] INFO  (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
+2023-09-02T14:02:43,072 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8443"]
+2023-09-02T14:02:43,074 [restartedMain] INFO  (TomcatWebServer.java:220) - Tomcat started on port(s): 8443 (http) with context path ''
+2023-09-02T14:02:43,109 [restartedMain] INFO  (StartupInfoLogger.java:61) - Started HdfcBbpsApplication in 0.486 seconds (JVM running for 395.866)
+2023-09-02T14:02:43,110 [restartedMain] INFO  (ConditionEvaluationDeltaLoggingListener.java:63) - Condition evaluation unchanged
+2023-09-02T14:02:49,592 [Thread-27] INFO  (AbstractEntityManagerFactoryBean.java:651) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-02T14:02:49,592 [Thread-27] INFO  (HikariDataSource.java:350) - HikariPool-9 - Shutdown initiated...
+2023-09-02T14:02:49,595 [Thread-27] INFO  (HikariDataSource.java:352) - HikariPool-9 - Shutdown completed.
+2023-09-02T14:02:49,641 [restartedMain] INFO  (StartupInfoLogger.java:55) - Starting HdfcBbpsApplication using Java 17.0.6 on DESKTOP-3E1BNCG with PID 22724 (C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master\target\classes started by USER in C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master)
+2023-09-02T14:02:49,641 [restartedMain] INFO  (SpringApplication.java:659) - No active profile set, falling back to default profiles: default
+2023-09-02T14:02:49,789 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-02T14:02:49,800 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:201) - Finished Spring Data repository scanning in 10 ms. Found 2 JPA repository interfaces.
+2023-09-02T14:02:49,852 [restartedMain] INFO  (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8443 (http)
+2023-09-02T14:02:49,853 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8443"]
+2023-09-02T14:02:49,853 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting service [Tomcat]
+2023-09-02T14:02:49,853 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.53]
+2023-09-02T14:02:49,865 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2023-09-02T14:02:49,865 [restartedMain] INFO  (ServletWebServerApplicationContext.java:290) - Root WebApplicationContext: initialization completed in 222 ms
+2023-09-02T14:02:49,881 [restartedMain] INFO  (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-02T14:02:49,884 [restartedMain] INFO  (HikariDataSource.java:110) - HikariPool-10 - Starting...
+2023-09-02T14:02:49,886 [restartedMain] INFO  (HikariDataSource.java:123) - HikariPool-10 - Start completed.
+2023-09-02T14:02:49,886 [restartedMain] INFO  (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-09-02T14:02:49,935 [restartedMain] INFO  (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-02T14:02:49,935 [restartedMain] INFO  (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-02T14:02:50,015 [restartedMain] WARN  (JpaBaseConfiguration.java:219) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-02T14:02:50,047 [restartedMain] INFO  (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
+2023-09-02T14:02:50,070 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8443"]
+2023-09-02T14:02:50,072 [restartedMain] INFO  (TomcatWebServer.java:220) - Tomcat started on port(s): 8443 (http) with context path ''
+2023-09-02T14:02:50,104 [restartedMain] INFO  (StartupInfoLogger.java:61) - Started HdfcBbpsApplication in 0.477 seconds (JVM running for 402.862)
+2023-09-02T14:02:50,105 [restartedMain] INFO  (ConditionEvaluationDeltaLoggingListener.java:63) - Condition evaluation unchanged
+2023-09-02T14:02:54,882 [http-nio-8443-exec-2] INFO  (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-02T14:02:54,882 [http-nio-8443-exec-2] INFO  (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+2023-09-02T14:02:54,883 [http-nio-8443-exec-2] INFO  (FrameworkServlet.java:547) - Completed initialization in 1 ms
+2023-09-02T14:02:54,948 [http-nio-8443-exec-2] INFO  (HikariDataSource.java:110) - HikariPool-11 - Starting...
+2023-09-02T14:02:54,951 [http-nio-8443-exec-2] INFO  (HikariDataSource.java:123) - HikariPool-11 - Start completed.
+2023-09-02T14:02:54,954 [http-nio-8443-exec-2] ERROR (payuController.java:171) - class java.lang.Object cannot be cast to class org.springframework.jdbc.core.RowMapper (java.lang.Object is in module java.base of loader 'bootstrap'; org.springframework.jdbc.core.RowMapper is in unnamed module of loader 'app')com.shubham.bbps.dto.Error@3058e2c3
+2023-09-02T14:03:14,986 [Thread-31] INFO  (HikariDataSource.java:350) - HikariPool-11 - Shutdown initiated...
+2023-09-02T14:03:14,987 [Thread-31] INFO  (HikariDataSource.java:352) - HikariPool-11 - Shutdown completed.
+2023-09-02T14:03:14,987 [Thread-31] INFO  (AbstractEntityManagerFactoryBean.java:651) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-02T14:03:14,989 [Thread-31] INFO  (HikariDataSource.java:350) - HikariPool-10 - Shutdown initiated...
+2023-09-02T14:03:14,990 [Thread-31] INFO  (HikariDataSource.java:352) - HikariPool-10 - Shutdown completed.
+2023-09-02T14:03:15,037 [restartedMain] INFO  (StartupInfoLogger.java:55) - Starting HdfcBbpsApplication using Java 17.0.6 on DESKTOP-3E1BNCG with PID 22724 (C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master\target\classes started by USER in C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master)
+2023-09-02T14:03:15,038 [restartedMain] INFO  (SpringApplication.java:659) - No active profile set, falling back to default profiles: default
+2023-09-02T14:03:15,186 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-02T14:03:15,194 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:201) - Finished Spring Data repository scanning in 8 ms. Found 2 JPA repository interfaces.
+2023-09-02T14:03:15,239 [restartedMain] INFO  (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8443 (http)
+2023-09-02T14:03:15,240 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8443"]
+2023-09-02T14:03:15,240 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting service [Tomcat]
+2023-09-02T14:03:15,240 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.53]
+2023-09-02T14:03:15,253 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2023-09-02T14:03:15,253 [restartedMain] INFO  (ServletWebServerApplicationContext.java:290) - Root WebApplicationContext: initialization completed in 214 ms
+2023-09-02T14:03:15,269 [restartedMain] INFO  (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-02T14:03:15,272 [restartedMain] INFO  (HikariDataSource.java:110) - HikariPool-12 - Starting...
+2023-09-02T14:03:15,274 [restartedMain] INFO  (HikariDataSource.java:123) - HikariPool-12 - Start completed.
+2023-09-02T14:03:15,274 [restartedMain] INFO  (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-09-02T14:03:15,325 [restartedMain] INFO  (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-02T14:03:15,326 [restartedMain] INFO  (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-02T14:03:15,395 [restartedMain] WARN  (JpaBaseConfiguration.java:219) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-02T14:03:15,426 [restartedMain] INFO  (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
+2023-09-02T14:03:15,446 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8443"]
+2023-09-02T14:03:15,448 [restartedMain] INFO  (TomcatWebServer.java:220) - Tomcat started on port(s): 8443 (http) with context path ''
+2023-09-02T14:03:15,481 [restartedMain] INFO  (StartupInfoLogger.java:61) - Started HdfcBbpsApplication in 0.457 seconds (JVM running for 428.238)
+2023-09-02T14:03:15,482 [restartedMain] INFO  (ConditionEvaluationDeltaLoggingListener.java:63) - Condition evaluation unchanged
+2023-09-02T14:10:16,935 [Thread-35] INFO  (AbstractEntityManagerFactoryBean.java:651) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-02T14:10:16,936 [Thread-35] INFO  (HikariDataSource.java:350) - HikariPool-12 - Shutdown initiated...
+2023-09-02T14:10:16,939 [Thread-35] INFO  (HikariDataSource.java:352) - HikariPool-12 - Shutdown completed.
+2023-09-02T14:10:16,985 [restartedMain] INFO  (StartupInfoLogger.java:55) - Starting HdfcBbpsApplication using Java 17.0.6 on DESKTOP-3E1BNCG with PID 22724 (C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master\target\classes started by USER in C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master)
+2023-09-02T14:10:16,986 [restartedMain] INFO  (SpringApplication.java:659) - No active profile set, falling back to default profiles: default
+2023-09-02T14:10:17,123 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-02T14:10:17,134 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:201) - Finished Spring Data repository scanning in 11 ms. Found 2 JPA repository interfaces.
+2023-09-02T14:10:17,181 [restartedMain] INFO  (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8443 (http)
+2023-09-02T14:10:17,182 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8443"]
+2023-09-02T14:10:17,182 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting service [Tomcat]
+2023-09-02T14:10:17,182 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.53]
+2023-09-02T14:10:17,193 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2023-09-02T14:10:17,193 [restartedMain] INFO  (ServletWebServerApplicationContext.java:290) - Root WebApplicationContext: initialization completed in 206 ms
+2023-09-02T14:10:17,208 [restartedMain] INFO  (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-02T14:10:17,210 [restartedMain] INFO  (HikariDataSource.java:110) - HikariPool-13 - Starting...
+2023-09-02T14:10:17,212 [restartedMain] INFO  (HikariDataSource.java:123) - HikariPool-13 - Start completed.
+2023-09-02T14:10:17,212 [restartedMain] INFO  (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-09-02T14:10:17,264 [restartedMain] INFO  (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-02T14:10:17,265 [restartedMain] INFO  (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-02T14:10:17,334 [restartedMain] WARN  (JpaBaseConfiguration.java:219) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-02T14:10:17,360 [restartedMain] INFO  (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
+2023-09-02T14:10:17,377 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8443"]
+2023-09-02T14:10:17,378 [restartedMain] INFO  (TomcatWebServer.java:220) - Tomcat started on port(s): 8443 (http) with context path ''
+2023-09-02T14:10:17,410 [restartedMain] INFO  (StartupInfoLogger.java:61) - Started HdfcBbpsApplication in 0.439 seconds (JVM running for 850.167)
+2023-09-02T14:10:17,411 [restartedMain] INFO  (ConditionEvaluationDeltaLoggingListener.java:63) - Condition evaluation unchanged
+2023-09-02T14:16:05,302 [Thread-39] INFO  (AbstractEntityManagerFactoryBean.java:651) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-02T14:16:05,302 [Thread-39] INFO  (HikariDataSource.java:350) - HikariPool-13 - Shutdown initiated...
+2023-09-02T14:16:05,304 [Thread-39] INFO  (HikariDataSource.java:352) - HikariPool-13 - Shutdown completed.
+2023-09-02T14:16:05,354 [restartedMain] INFO  (StartupInfoLogger.java:55) - Starting HdfcBbpsApplication using Java 17.0.6 on DESKTOP-3E1BNCG with PID 22724 (C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master\target\classes started by USER in C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master)
+2023-09-02T14:16:05,354 [restartedMain] INFO  (SpringApplication.java:659) - No active profile set, falling back to default profiles: default
+2023-09-02T14:16:05,481 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-02T14:16:05,488 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:201) - Finished Spring Data repository scanning in 7 ms. Found 2 JPA repository interfaces.
+2023-09-02T14:16:05,529 [restartedMain] INFO  (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8443 (http)
+2023-09-02T14:16:05,531 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8443"]
+2023-09-02T14:16:05,531 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting service [Tomcat]
+2023-09-02T14:16:05,531 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.53]
+2023-09-02T14:16:05,540 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2023-09-02T14:16:05,541 [restartedMain] INFO  (ServletWebServerApplicationContext.java:290) - Root WebApplicationContext: initialization completed in 186 ms
+2023-09-02T14:16:05,559 [restartedMain] INFO  (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-02T14:16:05,561 [restartedMain] INFO  (HikariDataSource.java:110) - HikariPool-14 - Starting...
+2023-09-02T14:16:05,564 [restartedMain] INFO  (HikariDataSource.java:123) - HikariPool-14 - Start completed.
+2023-09-02T14:16:05,564 [restartedMain] INFO  (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-09-02T14:16:05,615 [restartedMain] INFO  (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-02T14:16:05,615 [restartedMain] INFO  (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-02T14:16:05,681 [restartedMain] WARN  (JpaBaseConfiguration.java:219) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-02T14:16:05,711 [restartedMain] INFO  (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
+2023-09-02T14:16:05,729 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8443"]
+2023-09-02T14:16:05,731 [restartedMain] INFO  (TomcatWebServer.java:220) - Tomcat started on port(s): 8443 (http) with context path ''
+2023-09-02T14:16:05,765 [restartedMain] INFO  (StartupInfoLogger.java:61) - Started HdfcBbpsApplication in 0.425 seconds (JVM running for 1198.522)
+2023-09-02T14:16:05,765 [restartedMain] INFO  (ConditionEvaluationDeltaLoggingListener.java:63) - Condition evaluation unchanged
+2023-09-02T14:16:10,174 [http-nio-8443-exec-2] INFO  (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-02T14:16:10,174 [http-nio-8443-exec-2] INFO  (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+2023-09-02T14:16:10,175 [http-nio-8443-exec-2] INFO  (FrameworkServlet.java:547) - Completed initialization in 1 ms
+2023-09-02T14:16:10,241 [http-nio-8443-exec-2] INFO  (HikariDataSource.java:110) - HikariPool-15 - Starting...
+2023-09-02T14:16:10,244 [http-nio-8443-exec-2] INFO  (HikariDataSource.java:123) - HikariPool-15 - Start completed.
+2023-09-02T14:16:10,247 [http-nio-8443-exec-2] ERROR (payuController.java:171) - class java.lang.Object cannot be cast to class org.springframework.jdbc.core.RowMapper (java.lang.Object is in module java.base of loader 'bootstrap'; org.springframework.jdbc.core.RowMapper is in unnamed module of loader 'app')com.shubham.bbps.dto.Error@1cc42c1b
+2023-09-02T14:24:34,730 [Thread-43] INFO  (HikariDataSource.java:350) - HikariPool-15 - Shutdown initiated...
+2023-09-02T14:24:34,732 [Thread-43] INFO  (HikariDataSource.java:352) - HikariPool-15 - Shutdown completed.
+2023-09-02T14:24:34,732 [Thread-43] INFO  (AbstractEntityManagerFactoryBean.java:651) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-02T14:24:34,733 [Thread-43] INFO  (HikariDataSource.java:350) - HikariPool-14 - Shutdown initiated...
+2023-09-02T14:24:34,734 [Thread-43] INFO  (HikariDataSource.java:352) - HikariPool-14 - Shutdown completed.
+2023-09-02T14:24:34,787 [restartedMain] INFO  (StartupInfoLogger.java:55) - Starting HdfcBbpsApplication using Java 17.0.6 on DESKTOP-3E1BNCG with PID 22724 (C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master\target\classes started by USER in C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master)
+2023-09-02T14:24:34,787 [restartedMain] INFO  (SpringApplication.java:659) - No active profile set, falling back to default profiles: default
+2023-09-02T14:24:34,914 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-02T14:24:34,924 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:201) - Finished Spring Data repository scanning in 9 ms. Found 2 JPA repository interfaces.
+2023-09-02T14:24:34,967 [restartedMain] INFO  (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8443 (http)
+2023-09-02T14:24:34,967 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8443"]
+2023-09-02T14:24:34,967 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting service [Tomcat]
+2023-09-02T14:24:34,968 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.53]
+2023-09-02T14:24:34,978 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2023-09-02T14:24:34,978 [restartedMain] INFO  (ServletWebServerApplicationContext.java:290) - Root WebApplicationContext: initialization completed in 190 ms
+2023-09-02T14:24:34,994 [restartedMain] INFO  (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-02T14:24:34,996 [restartedMain] INFO  (HikariDataSource.java:110) - HikariPool-16 - Starting...
+2023-09-02T14:24:34,999 [restartedMain] INFO  (HikariDataSource.java:123) - HikariPool-16 - Start completed.
+2023-09-02T14:24:34,999 [restartedMain] INFO  (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-09-02T14:24:35,050 [restartedMain] INFO  (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-02T14:24:35,050 [restartedMain] INFO  (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-02T14:24:35,116 [restartedMain] WARN  (JpaBaseConfiguration.java:219) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-02T14:24:35,139 [restartedMain] INFO  (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
+2023-09-02T14:24:35,156 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8443"]
+2023-09-02T14:24:35,158 [restartedMain] INFO  (TomcatWebServer.java:220) - Tomcat started on port(s): 8443 (http) with context path ''
+2023-09-02T14:24:35,189 [restartedMain] INFO  (StartupInfoLogger.java:61) - Started HdfcBbpsApplication in 0.418 seconds (JVM running for 1707.947)
+2023-09-02T14:24:35,190 [restartedMain] INFO  (ConditionEvaluationDeltaLoggingListener.java:63) - Condition evaluation unchanged
+2023-09-02T22:33:32,414 [Thread-47] INFO  (AbstractEntityManagerFactoryBean.java:651) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-02T22:33:32,425 [Thread-47] INFO  (HikariDataSource.java:350) - HikariPool-16 - Shutdown initiated...
+2023-09-02T22:33:32,427 [Thread-47] INFO  (HikariDataSource.java:352) - HikariPool-16 - Shutdown completed.
+2023-09-02T22:33:32,578 [restartedMain] INFO  (StartupInfoLogger.java:55) - Starting HdfcBbpsApplication using Java 17.0.6 on DESKTOP-3E1BNCG with PID 22724 (C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master\target\classes started by USER in C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master)
+2023-09-02T22:33:32,578 [restartedMain] INFO  (SpringApplication.java:659) - No active profile set, falling back to default profiles: default
+2023-09-02T22:33:32,764 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-02T22:33:32,772 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:201) - Finished Spring Data repository scanning in 7 ms. Found 2 JPA repository interfaces.
+2023-09-02T22:33:32,867 [restartedMain] INFO  (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8443 (http)
+2023-09-02T22:33:32,868 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8443"]
+2023-09-02T22:33:32,868 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting service [Tomcat]
+2023-09-02T22:33:32,868 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.53]
+2023-09-02T22:33:32,880 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2023-09-02T22:33:32,880 [restartedMain] INFO  (ServletWebServerApplicationContext.java:290) - Root WebApplicationContext: initialization completed in 300 ms
+2023-09-02T22:33:32,906 [restartedMain] INFO  (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-02T22:33:32,910 [restartedMain] INFO  (HikariDataSource.java:110) - HikariPool-17 - Starting...
+2023-09-02T22:33:32,912 [restartedMain] INFO  (HikariDataSource.java:123) - HikariPool-17 - Start completed.
+2023-09-02T22:33:32,913 [restartedMain] INFO  (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-09-02T22:33:32,960 [restartedMain] INFO  (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-02T22:33:32,961 [restartedMain] INFO  (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-02T22:33:32,991 [restartedMain] WARN  (AbstractApplicationContext.java:591) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'payuController' defined in file [C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master\target\classes\com\shubham\bbps\controller\payuController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.shubham.bbps.controller.payuController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	obj cannot be resolved
+	BigDecimal cannot be resolved to a type
+	BigDecimal cannot be resolved to a type
+	row cannot be resolved
+	obj cannot be resolved
+	Timestamp cannot be resolved to a type
+	Timestamp cannot be resolved to a type
+	row cannot be resolved
+	customers cannot be resolved
+	obj cannot be resolved to a variable
+	Syntax error, insert "Finally" to complete TryStatement
+	actor cannot be resolved
+	actor cannot be resolved
+	actor cannot be resolved
+	actor cannot be resolved
+	actor cannot be resolved
+	actor cannot be resolved
+	actor cannot be resolved
+	actor cannot be resolved
+	actor cannot be resolved
+	actor cannot be resolved
+	actor cannot be resolved
+	actor cannot be resolved
+	actor cannot be resolved
+	actor cannot be resolved
+	actor cannot be resolved
+	actor cannot be resolved
+	Syntax error on token "catch", Identifier expected
+	Void methods cannot return a value
+	Syntax error on token "}", delete this token
+
+2023-09-02T22:33:32,991 [restartedMain] INFO  (AbstractEntityManagerFactoryBean.java:651) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-02T22:33:32,992 [restartedMain] INFO  (HikariDataSource.java:350) - HikariPool-17 - Shutdown initiated...
+2023-09-02T22:33:32,992 [restartedMain] INFO  (HikariDataSource.java:352) - HikariPool-17 - Shutdown completed.
+2023-09-02T22:33:32,992 [restartedMain] INFO  (DirectJDKLog.java:173) - Stopping service [Tomcat]
+2023-09-02T22:33:32,997 [restartedMain] INFO  (ConditionEvaluationReportLoggingListener.java:136) - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-09-02T22:33:33,011 [restartedMain] ERROR (SpringApplication.java:843) - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'payuController' defined in file [C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master\target\classes\com\shubham\bbps\controller\payuController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.shubham.bbps.controller.payuController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	obj cannot be resolved
+	BigDecimal cannot be resolved to a type
+	BigDecimal cannot be resolved to a type
+	row cannot be resolved
+	obj cannot be resolved
+	Timestamp cannot be resolved to a type
+	Timestamp cannot be resolved to a type
+	row cannot be resolved
+	customers cannot be resolved
+	obj cannot be resolved to a variable
+	Syntax error, insert "Finally" to complete TryStatement
+	actor cannot be resolved
+	actor cannot be resolved
+	actor cannot be resolved
+	actor cannot be resolved
+	actor cannot be resolved
+	actor cannot be resolved
+	actor cannot be resolved
+	actor cannot be resolved
+	actor cannot be resolved
+	actor cannot be resolved
+	actor cannot be resolved
+	actor cannot be resolved
+	actor cannot be resolved
+	actor cannot be resolved
+	actor cannot be resolved
+	actor cannot be resolved
+	Syntax error on token "catch", Identifier expected
+	Void methods cannot return a value
+	Syntax error on token "}", delete this token
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1334) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.10.jar:5.3.10]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.10.jar:5.3.10]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.5.5.jar:2.5.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) [spring-boot-2.5.5.jar:2.5.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434) [spring-boot-2.5.5.jar:2.5.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338) [spring-boot-2.5.5.jar:2.5.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) [spring-boot-2.5.5.jar:2.5.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332) [spring-boot-2.5.5.jar:2.5.5]
+	at com.shubham.bbps.HdfcBbpsApplication.main(HdfcBbpsApplication.java:24) [classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.5.5.jar:2.5.5]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.shubham.bbps.controller.payuController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	obj cannot be resolved
+	BigDecimal cannot be resolved to a type
+	BigDecimal cannot be resolved to a type
+	row cannot be resolved
+	obj cannot be resolved
+	Timestamp cannot be resolved to a type
+	Timestamp cannot be resolved to a type
+	row cannot be resolved
+	customers cannot be resolved
+	obj cannot be resolved to a variable
+	Syntax error, insert "Finally" to complete TryStatement
+	actor cannot be resolved
+	actor cannot be resolved
+	actor cannot be resolved
+	actor cannot be resolved
+	actor cannot be resolved
+	actor cannot be resolved
+	actor cannot be resolved
+	actor cannot be resolved
+	actor cannot be resolved
+	actor cannot be resolved
+	actor cannot be resolved
+	actor cannot be resolved
+	actor cannot be resolved
+	actor cannot be resolved
+	actor cannot be resolved
+	actor cannot be resolved
+	Syntax error on token "catch", Identifier expected
+	Void methods cannot return a value
+	Syntax error on token "}", delete this token
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1326) ~[spring-beans-5.3.10.jar:5.3.10]
+	... 22 more
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	obj cannot be resolved
+	BigDecimal cannot be resolved to a type
+	BigDecimal cannot be resolved to a type
+	row cannot be resolved
+	obj cannot be resolved
+	Timestamp cannot be resolved to a type
+	Timestamp cannot be resolved to a type
+	row cannot be resolved
+	customers cannot be resolved
+	obj cannot be resolved to a variable
+	Syntax error, insert "Finally" to complete TryStatement
+	actor cannot be resolved
+	actor cannot be resolved
+	actor cannot be resolved
+	actor cannot be resolved
+	actor cannot be resolved
+	actor cannot be resolved
+	actor cannot be resolved
+	actor cannot be resolved
+	actor cannot be resolved
+	actor cannot be resolved
+	actor cannot be resolved
+	actor cannot be resolved
+	actor cannot be resolved
+	actor cannot be resolved
+	actor cannot be resolved
+	actor cannot be resolved
+	Syntax error on token "catch", Identifier expected
+	Void methods cannot return a value
+	Syntax error on token "}", delete this token
+
+	at com.shubham.bbps.controller.payuController.<init>(payuController.java:118) ~[classes/:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[?:?]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:211) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-5.3.10.jar:5.3.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1326) ~[spring-beans-5.3.10.jar:5.3.10]
+	... 22 more
+2023-09-02T22:34:04,026 [restartedMain] INFO  (StartupInfoLogger.java:55) - Starting HdfcBbpsApplication using Java 17.0.6 on DESKTOP-3E1BNCG with PID 22724 (C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master\target\classes started by USER in C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master)
+2023-09-02T22:34:04,026 [restartedMain] INFO  (SpringApplication.java:659) - No active profile set, falling back to default profiles: default
+2023-09-02T22:34:04,160 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-02T22:34:04,167 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:201) - Finished Spring Data repository scanning in 6 ms. Found 2 JPA repository interfaces.
+2023-09-02T22:34:04,206 [restartedMain] INFO  (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8443 (http)
+2023-09-02T22:34:04,207 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8443"]
+2023-09-02T22:34:04,207 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting service [Tomcat]
+2023-09-02T22:34:04,208 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.53]
+2023-09-02T22:34:04,218 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2023-09-02T22:34:04,219 [restartedMain] INFO  (ServletWebServerApplicationContext.java:290) - Root WebApplicationContext: initialization completed in 192 ms
+2023-09-02T22:34:04,234 [restartedMain] INFO  (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-02T22:34:04,237 [restartedMain] INFO  (HikariDataSource.java:110) - HikariPool-18 - Starting...
+2023-09-02T22:34:04,239 [restartedMain] INFO  (HikariDataSource.java:123) - HikariPool-18 - Start completed.
+2023-09-02T22:34:04,239 [restartedMain] INFO  (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-09-02T22:34:04,281 [restartedMain] INFO  (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-02T22:34:04,283 [restartedMain] INFO  (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-02T22:34:04,370 [restartedMain] WARN  (JpaBaseConfiguration.java:219) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-02T22:34:04,409 [restartedMain] INFO  (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
+2023-09-02T22:34:04,435 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8443"]
+2023-09-02T22:34:04,436 [restartedMain] INFO  (TomcatWebServer.java:220) - Tomcat started on port(s): 8443 (http) with context path ''
+2023-09-02T22:34:04,478 [restartedMain] INFO  (StartupInfoLogger.java:61) - Started HdfcBbpsApplication in 0.466 seconds (JVM running for 31077.236)
+2023-09-02T22:34:04,479 [restartedMain] INFO  (ConditionEvaluationDeltaLoggingListener.java:63) - Condition evaluation unchanged
+2023-09-02T22:34:18,802 [background-preinit] INFO  (Version.java:21) - HV000001: Hibernate Validator 6.2.0.Final
+2023-09-02T22:34:18,856 [restartedMain] INFO  (StartupInfoLogger.java:55) - Starting HdfcBbpsApplication using Java 17.0.6 on DESKTOP-3E1BNCG with PID 13240 (C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master\target\classes started by USER in C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master)
+2023-09-02T22:34:18,863 [restartedMain] INFO  (SpringApplication.java:659) - No active profile set, falling back to default profiles: default
+2023-09-02T22:34:18,906 [restartedMain] INFO  (DeferredLog.java:255) - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-09-02T22:34:18,907 [restartedMain] INFO  (DeferredLog.java:255) - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-09-02T22:34:19,605 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-02T22:34:19,657 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:201) - Finished Spring Data repository scanning in 44 ms. Found 2 JPA repository interfaces.
+2023-09-02T22:34:20,262 [restartedMain] INFO  (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8443 (http)
+2023-09-02T22:34:20,273 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8443"]
+2023-09-02T22:34:20,274 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting service [Tomcat]
+2023-09-02T22:34:20,274 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.53]
+2023-09-02T22:34:20,346 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2023-09-02T22:34:20,346 [restartedMain] INFO  (ServletWebServerApplicationContext.java:290) - Root WebApplicationContext: initialization completed in 1439 ms
+2023-09-02T22:34:20,468 [restartedMain] INFO  (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-02T22:34:20,512 [restartedMain] INFO  (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.32.Final
+2023-09-02T22:34:20,623 [restartedMain] INFO  (JavaReflectionManager.java:56) - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-09-02T22:34:20,731 [restartedMain] INFO  (HikariDataSource.java:110) - HikariPool-1 - Starting...
+2023-09-02T22:34:20,866 [restartedMain] INFO  (HikariDataSource.java:123) - HikariPool-1 - Start completed.
+2023-09-02T22:34:20,877 [restartedMain] INFO  (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-09-02T22:34:21,348 [restartedMain] INFO  (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-02T22:34:21,356 [restartedMain] INFO  (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-02T22:34:21,883 [restartedMain] WARN  (JpaBaseConfiguration.java:219) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-02T22:34:22,078 [restartedMain] INFO  (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
+2023-09-02T22:34:22,210 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8443"]
+2023-09-02T22:34:22,270 [restartedMain] INFO  (TomcatWebServer.java:220) - Tomcat started on port(s): 8443 (http) with context path ''
+2023-09-02T22:34:22,495 [restartedMain] INFO  (StartupInfoLogger.java:61) - Started HdfcBbpsApplication in 3.922 seconds (JVM running for 4.772)
+2023-09-02T22:34:30,716 [http-nio-8443-exec-2] INFO  (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-02T22:34:30,716 [http-nio-8443-exec-2] INFO  (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+2023-09-02T22:34:30,717 [http-nio-8443-exec-2] INFO  (FrameworkServlet.java:547) - Completed initialization in 1 ms
+2023-09-02T22:34:30,866 [http-nio-8443-exec-2] INFO  (HikariDataSource.java:110) - HikariPool-2 - Starting...
+2023-09-02T22:34:30,870 [http-nio-8443-exec-2] INFO  (HikariDataSource.java:123) - HikariPool-2 - Start completed.
+2023-09-02T22:34:30,893 [http-nio-8443-exec-2] ERROR (payuController.java:141) - com.shubham.bbps.dto.Error@74c92b3f
+2023-09-02T22:36:35,153 [Thread-4] INFO  (HikariDataSource.java:350) - HikariPool-2 - Shutdown initiated...
+2023-09-02T22:36:35,160 [Thread-4] INFO  (HikariDataSource.java:352) - HikariPool-2 - Shutdown completed.
+2023-09-02T22:36:35,160 [Thread-4] INFO  (AbstractEntityManagerFactoryBean.java:651) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-02T22:36:35,163 [Thread-4] INFO  (HikariDataSource.java:350) - HikariPool-1 - Shutdown initiated...
+2023-09-02T22:36:35,164 [Thread-4] INFO  (HikariDataSource.java:352) - HikariPool-1 - Shutdown completed.
+2023-09-02T22:36:35,232 [restartedMain] INFO  (StartupInfoLogger.java:55) - Starting HdfcBbpsApplication using Java 17.0.6 on DESKTOP-3E1BNCG with PID 13240 (C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master\target\classes started by USER in C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master)
+2023-09-02T22:36:35,232 [restartedMain] INFO  (SpringApplication.java:659) - No active profile set, falling back to default profiles: default
+2023-09-02T22:36:35,433 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-02T22:36:35,442 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:201) - Finished Spring Data repository scanning in 9 ms. Found 2 JPA repository interfaces.
+2023-09-02T22:36:35,522 [restartedMain] INFO  (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8443 (http)
+2023-09-02T22:36:35,523 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8443"]
+2023-09-02T22:36:35,523 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting service [Tomcat]
+2023-09-02T22:36:35,523 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.53]
+2023-09-02T22:36:35,538 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2023-09-02T22:36:35,538 [restartedMain] INFO  (ServletWebServerApplicationContext.java:290) - Root WebApplicationContext: initialization completed in 303 ms
+2023-09-02T22:36:35,563 [restartedMain] INFO  (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-02T22:36:35,567 [restartedMain] INFO  (HikariDataSource.java:110) - HikariPool-3 - Starting...
+2023-09-02T22:36:35,570 [restartedMain] INFO  (HikariDataSource.java:123) - HikariPool-3 - Start completed.
+2023-09-02T22:36:35,570 [restartedMain] INFO  (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-09-02T22:36:35,630 [restartedMain] INFO  (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-02T22:36:35,630 [restartedMain] INFO  (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-02T22:36:35,735 [restartedMain] WARN  (JpaBaseConfiguration.java:219) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-02T22:36:35,774 [restartedMain] INFO  (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
+2023-09-02T22:36:35,806 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8443"]
+2023-09-02T22:36:35,808 [restartedMain] INFO  (TomcatWebServer.java:220) - Tomcat started on port(s): 8443 (http) with context path ''
+2023-09-02T22:36:35,870 [restartedMain] INFO  (StartupInfoLogger.java:61) - Started HdfcBbpsApplication in 0.663 seconds (JVM running for 138.148)
+2023-09-02T22:36:35,872 [restartedMain] INFO  (ConditionEvaluationDeltaLoggingListener.java:63) - Condition evaluation unchanged
+2023-09-02T22:36:39,852 [http-nio-8443-exec-2] INFO  (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-02T22:36:39,852 [http-nio-8443-exec-2] INFO  (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+2023-09-02T22:36:39,853 [http-nio-8443-exec-2] INFO  (FrameworkServlet.java:547) - Completed initialization in 1 ms
+2023-09-02T22:36:39,923 [http-nio-8443-exec-2] INFO  (HikariDataSource.java:110) - HikariPool-4 - Starting...
+2023-09-02T22:36:39,925 [http-nio-8443-exec-2] INFO  (HikariDataSource.java:123) - HikariPool-4 - Start completed.
+2023-09-02T22:36:40,004 [http-nio-8443-exec-2] INFO  (payuController.java:177) - com.shubham.bbps.dto.PayuFetchResponse@7956bc2f
+2023-09-02T22:42:48,302 [Thread-7] INFO  (HikariDataSource.java:350) - HikariPool-4 - Shutdown initiated...
+2023-09-02T22:42:48,303 [Thread-7] INFO  (HikariDataSource.java:352) - HikariPool-4 - Shutdown completed.
+2023-09-02T22:42:48,304 [Thread-7] INFO  (AbstractEntityManagerFactoryBean.java:651) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-02T22:42:48,304 [Thread-7] INFO  (HikariDataSource.java:350) - HikariPool-3 - Shutdown initiated...
+2023-09-02T22:42:48,307 [Thread-7] INFO  (HikariDataSource.java:352) - HikariPool-3 - Shutdown completed.
+2023-09-02T22:42:48,372 [restartedMain] INFO  (StartupInfoLogger.java:55) - Starting HdfcBbpsApplication using Java 17.0.6 on DESKTOP-3E1BNCG with PID 13240 (C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master\target\classes started by USER in C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master)
+2023-09-02T22:42:48,373 [restartedMain] INFO  (SpringApplication.java:659) - No active profile set, falling back to default profiles: default
+2023-09-02T22:42:48,549 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-02T22:42:48,558 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:201) - Finished Spring Data repository scanning in 9 ms. Found 2 JPA repository interfaces.
+2023-09-02T22:42:48,620 [restartedMain] INFO  (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8443 (http)
+2023-09-02T22:42:48,621 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8443"]
+2023-09-02T22:42:48,621 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting service [Tomcat]
+2023-09-02T22:42:48,621 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.53]
+2023-09-02T22:42:48,643 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2023-09-02T22:42:48,644 [restartedMain] INFO  (ServletWebServerApplicationContext.java:290) - Root WebApplicationContext: initialization completed in 269 ms
+2023-09-02T22:42:48,662 [restartedMain] INFO  (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-02T22:42:48,664 [restartedMain] INFO  (HikariDataSource.java:110) - HikariPool-5 - Starting...
+2023-09-02T22:42:48,667 [restartedMain] INFO  (HikariDataSource.java:123) - HikariPool-5 - Start completed.
+2023-09-02T22:42:48,668 [restartedMain] INFO  (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-09-02T22:42:48,720 [restartedMain] INFO  (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-02T22:42:48,720 [restartedMain] INFO  (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-02T22:42:48,814 [restartedMain] WARN  (JpaBaseConfiguration.java:219) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-02T22:42:48,849 [restartedMain] INFO  (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
+2023-09-02T22:42:48,876 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8443"]
+2023-09-02T22:42:48,878 [restartedMain] INFO  (TomcatWebServer.java:220) - Tomcat started on port(s): 8443 (http) with context path ''
+2023-09-02T22:42:48,929 [restartedMain] INFO  (StartupInfoLogger.java:61) - Started HdfcBbpsApplication in 0.58 seconds (JVM running for 511.207)
+2023-09-02T22:42:48,931 [restartedMain] INFO  (ConditionEvaluationDeltaLoggingListener.java:63) - Condition evaluation unchanged
+2023-09-02T22:42:54,371 [Thread-11] INFO  (AbstractEntityManagerFactoryBean.java:651) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-02T22:42:54,371 [Thread-11] INFO  (HikariDataSource.java:350) - HikariPool-5 - Shutdown initiated...
+2023-09-02T22:42:54,374 [Thread-11] INFO  (HikariDataSource.java:352) - HikariPool-5 - Shutdown completed.
+2023-09-02T22:42:54,434 [restartedMain] INFO  (StartupInfoLogger.java:55) - Starting HdfcBbpsApplication using Java 17.0.6 on DESKTOP-3E1BNCG with PID 13240 (C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master\target\classes started by USER in C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master)
+2023-09-02T22:42:54,435 [restartedMain] INFO  (SpringApplication.java:659) - No active profile set, falling back to default profiles: default
+2023-09-02T22:42:54,604 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-02T22:42:54,614 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:201) - Finished Spring Data repository scanning in 9 ms. Found 2 JPA repository interfaces.
+2023-09-02T22:42:54,668 [restartedMain] INFO  (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8443 (http)
+2023-09-02T22:42:54,668 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8443"]
+2023-09-02T22:42:54,668 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting service [Tomcat]
+2023-09-02T22:42:54,669 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.53]
+2023-09-02T22:42:54,689 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2023-09-02T22:42:54,689 [restartedMain] INFO  (ServletWebServerApplicationContext.java:290) - Root WebApplicationContext: initialization completed in 253 ms
+2023-09-02T22:42:54,707 [restartedMain] INFO  (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-02T22:42:54,709 [restartedMain] INFO  (HikariDataSource.java:110) - HikariPool-6 - Starting...
+2023-09-02T22:42:54,712 [restartedMain] INFO  (HikariDataSource.java:123) - HikariPool-6 - Start completed.
+2023-09-02T22:42:54,712 [restartedMain] INFO  (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-09-02T22:42:54,762 [restartedMain] INFO  (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-02T22:42:54,762 [restartedMain] INFO  (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-02T22:42:54,854 [restartedMain] WARN  (JpaBaseConfiguration.java:219) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-02T22:42:54,886 [restartedMain] INFO  (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
+2023-09-02T22:42:54,911 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8443"]
+2023-09-02T22:42:54,913 [restartedMain] INFO  (TomcatWebServer.java:220) - Tomcat started on port(s): 8443 (http) with context path ''
+2023-09-02T22:42:54,963 [restartedMain] INFO  (StartupInfoLogger.java:61) - Started HdfcBbpsApplication in 0.55 seconds (JVM running for 517.241)
+2023-09-02T22:42:54,965 [restartedMain] INFO  (ConditionEvaluationDeltaLoggingListener.java:63) - Condition evaluation unchanged
+2023-09-02T22:43:11,596 [Thread-15] INFO  (AbstractEntityManagerFactoryBean.java:651) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-02T22:43:11,596 [Thread-15] INFO  (HikariDataSource.java:350) - HikariPool-6 - Shutdown initiated...
+2023-09-02T22:43:11,597 [Thread-15] INFO  (HikariDataSource.java:352) - HikariPool-6 - Shutdown completed.
+2023-09-02T22:43:11,644 [restartedMain] INFO  (StartupInfoLogger.java:55) - Starting HdfcBbpsApplication using Java 17.0.6 on DESKTOP-3E1BNCG with PID 13240 (C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master\target\classes started by USER in C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master)
+2023-09-02T22:43:11,644 [restartedMain] INFO  (SpringApplication.java:659) - No active profile set, falling back to default profiles: default
+2023-09-02T22:43:11,804 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-02T22:43:11,813 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:201) - Finished Spring Data repository scanning in 8 ms. Found 2 JPA repository interfaces.
+2023-09-02T22:43:11,859 [restartedMain] INFO  (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8443 (http)
+2023-09-02T22:43:11,860 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8443"]
+2023-09-02T22:43:11,860 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting service [Tomcat]
+2023-09-02T22:43:11,860 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.53]
+2023-09-02T22:43:11,881 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2023-09-02T22:43:11,881 [restartedMain] INFO  (ServletWebServerApplicationContext.java:290) - Root WebApplicationContext: initialization completed in 235 ms
+2023-09-02T22:43:11,899 [restartedMain] INFO  (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-02T22:43:11,901 [restartedMain] INFO  (HikariDataSource.java:110) - HikariPool-7 - Starting...
+2023-09-02T22:43:11,904 [restartedMain] INFO  (HikariDataSource.java:123) - HikariPool-7 - Start completed.
+2023-09-02T22:43:11,904 [restartedMain] INFO  (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-09-02T22:43:11,954 [restartedMain] INFO  (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-02T22:43:11,954 [restartedMain] INFO  (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-02T22:43:12,036 [restartedMain] WARN  (JpaBaseConfiguration.java:219) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-02T22:43:12,065 [restartedMain] INFO  (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
+2023-09-02T22:43:12,087 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8443"]
+2023-09-02T22:43:12,088 [restartedMain] INFO  (TomcatWebServer.java:220) - Tomcat started on port(s): 8443 (http) with context path ''
+2023-09-02T22:43:12,132 [restartedMain] INFO  (StartupInfoLogger.java:61) - Started HdfcBbpsApplication in 0.507 seconds (JVM running for 534.41)
+2023-09-02T22:43:12,133 [restartedMain] INFO  (ConditionEvaluationDeltaLoggingListener.java:63) - Condition evaluation unchanged
+2023-09-02T22:44:41,059 [Thread-19] INFO  (AbstractEntityManagerFactoryBean.java:651) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-02T22:44:41,059 [Thread-19] INFO  (HikariDataSource.java:350) - HikariPool-7 - Shutdown initiated...
+2023-09-02T22:44:41,061 [Thread-19] INFO  (HikariDataSource.java:352) - HikariPool-7 - Shutdown completed.
+2023-09-02T22:44:41,109 [restartedMain] INFO  (StartupInfoLogger.java:55) - Starting HdfcBbpsApplication using Java 17.0.6 on DESKTOP-3E1BNCG with PID 13240 (C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master\target\classes started by USER in C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master)
+2023-09-02T22:44:41,109 [restartedMain] INFO  (SpringApplication.java:659) - No active profile set, falling back to default profiles: default
+2023-09-02T22:44:41,270 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-02T22:44:41,279 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:201) - Finished Spring Data repository scanning in 8 ms. Found 2 JPA repository interfaces.
+2023-09-02T22:44:41,324 [restartedMain] INFO  (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8443 (http)
+2023-09-02T22:44:41,325 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8443"]
+2023-09-02T22:44:41,326 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting service [Tomcat]
+2023-09-02T22:44:41,326 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.53]
+2023-09-02T22:44:41,346 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2023-09-02T22:44:41,346 [restartedMain] INFO  (ServletWebServerApplicationContext.java:290) - Root WebApplicationContext: initialization completed in 234 ms
+2023-09-02T22:44:41,365 [restartedMain] INFO  (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-02T22:44:41,368 [restartedMain] INFO  (HikariDataSource.java:110) - HikariPool-8 - Starting...
+2023-09-02T22:44:41,371 [restartedMain] INFO  (HikariDataSource.java:123) - HikariPool-8 - Start completed.
+2023-09-02T22:44:41,371 [restartedMain] INFO  (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-09-02T22:44:41,421 [restartedMain] INFO  (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-02T22:44:41,421 [restartedMain] INFO  (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-02T22:44:41,502 [restartedMain] WARN  (JpaBaseConfiguration.java:219) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-02T22:44:41,532 [restartedMain] INFO  (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
+2023-09-02T22:44:41,556 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8443"]
+2023-09-02T22:44:41,559 [restartedMain] INFO  (TomcatWebServer.java:220) - Tomcat started on port(s): 8443 (http) with context path ''
+2023-09-02T22:44:41,601 [restartedMain] INFO  (StartupInfoLogger.java:61) - Started HdfcBbpsApplication in 0.509 seconds (JVM running for 623.878)
+2023-09-02T22:44:41,601 [restartedMain] INFO  (ConditionEvaluationDeltaLoggingListener.java:63) - Condition evaluation unchanged
+2023-09-02T22:45:51,307 [Thread-23] INFO  (AbstractEntityManagerFactoryBean.java:651) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-02T22:45:51,308 [Thread-23] INFO  (HikariDataSource.java:350) - HikariPool-8 - Shutdown initiated...
+2023-09-02T22:45:51,309 [Thread-23] INFO  (HikariDataSource.java:352) - HikariPool-8 - Shutdown completed.
+2023-09-02T22:45:51,359 [restartedMain] INFO  (StartupInfoLogger.java:55) - Starting HdfcBbpsApplication using Java 17.0.6 on DESKTOP-3E1BNCG with PID 13240 (C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master\target\classes started by USER in C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master)
+2023-09-02T22:45:51,359 [restartedMain] INFO  (SpringApplication.java:659) - No active profile set, falling back to default profiles: default
+2023-09-02T22:45:51,505 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-02T22:45:51,513 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:201) - Finished Spring Data repository scanning in 7 ms. Found 2 JPA repository interfaces.
+2023-09-02T22:45:51,559 [restartedMain] INFO  (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8443 (http)
+2023-09-02T22:45:51,559 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8443"]
+2023-09-02T22:45:51,560 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting service [Tomcat]
+2023-09-02T22:45:51,560 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.53]
+2023-09-02T22:45:51,589 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2023-09-02T22:45:51,590 [restartedMain] INFO  (ServletWebServerApplicationContext.java:290) - Root WebApplicationContext: initialization completed in 229 ms
+2023-09-02T22:45:51,606 [restartedMain] INFO  (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-02T22:45:51,608 [restartedMain] INFO  (HikariDataSource.java:110) - HikariPool-9 - Starting...
+2023-09-02T22:45:51,610 [restartedMain] INFO  (HikariDataSource.java:123) - HikariPool-9 - Start completed.
+2023-09-02T22:45:51,612 [restartedMain] INFO  (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-09-02T22:45:51,658 [restartedMain] INFO  (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-02T22:45:51,659 [restartedMain] INFO  (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-02T22:45:51,730 [restartedMain] WARN  (JpaBaseConfiguration.java:219) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-02T22:45:51,756 [restartedMain] INFO  (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
+2023-09-02T22:45:51,777 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8443"]
+2023-09-02T22:45:51,779 [restartedMain] INFO  (TomcatWebServer.java:220) - Tomcat started on port(s): 8443 (http) with context path ''
+2023-09-02T22:45:51,812 [restartedMain] INFO  (StartupInfoLogger.java:61) - Started HdfcBbpsApplication in 0.471 seconds (JVM running for 694.089)
+2023-09-02T22:45:51,813 [restartedMain] INFO  (ConditionEvaluationDeltaLoggingListener.java:63) - Condition evaluation unchanged
+2023-09-02T22:45:56,841 [http-nio-8443-exec-2] INFO  (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-02T22:45:56,841 [http-nio-8443-exec-2] INFO  (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+2023-09-02T22:45:56,841 [http-nio-8443-exec-2] INFO  (FrameworkServlet.java:547) - Completed initialization in 0 ms
+2023-09-02T22:45:56,908 [http-nio-8443-exec-2] INFO  (HikariDataSource.java:110) - HikariPool-10 - Starting...
+2023-09-02T22:45:56,910 [http-nio-8443-exec-2] INFO  (HikariDataSource.java:123) - HikariPool-10 - Start completed.
+2023-09-02T22:45:56,913 [http-nio-8443-exec-2] ERROR (payuController.java:192) - class java.lang.String cannot be cast to class java.math.BigInteger (java.lang.String and java.math.BigInteger are in module java.base of loader 'bootstrap')com.shubham.bbps.dto.Error@4f70a345
+2023-09-02T22:48:48,499 [Thread-27] INFO  (HikariDataSource.java:350) - HikariPool-10 - Shutdown initiated...
+2023-09-02T22:48:48,501 [Thread-27] INFO  (HikariDataSource.java:352) - HikariPool-10 - Shutdown completed.
+2023-09-02T22:48:48,501 [Thread-27] INFO  (AbstractEntityManagerFactoryBean.java:651) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-02T22:48:48,502 [Thread-27] INFO  (HikariDataSource.java:350) - HikariPool-9 - Shutdown initiated...
+2023-09-02T22:48:48,503 [Thread-27] INFO  (HikariDataSource.java:352) - HikariPool-9 - Shutdown completed.
+2023-09-02T22:48:48,552 [restartedMain] INFO  (StartupInfoLogger.java:55) - Starting HdfcBbpsApplication using Java 17.0.6 on DESKTOP-3E1BNCG with PID 13240 (C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master\target\classes started by USER in C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master)
+2023-09-02T22:48:48,552 [restartedMain] INFO  (SpringApplication.java:659) - No active profile set, falling back to default profiles: default
+2023-09-02T22:48:48,711 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-02T22:48:48,719 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:201) - Finished Spring Data repository scanning in 8 ms. Found 2 JPA repository interfaces.
+2023-09-02T22:48:48,768 [restartedMain] INFO  (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8443 (http)
+2023-09-02T22:48:48,769 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8443"]
+2023-09-02T22:48:48,769 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting service [Tomcat]
+2023-09-02T22:48:48,769 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.53]
+2023-09-02T22:48:48,781 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2023-09-02T22:48:48,781 [restartedMain] INFO  (ServletWebServerApplicationContext.java:290) - Root WebApplicationContext: initialization completed in 228 ms
+2023-09-02T22:48:48,799 [restartedMain] INFO  (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-02T22:48:48,802 [restartedMain] INFO  (HikariDataSource.java:110) - HikariPool-11 - Starting...
+2023-09-02T22:48:48,805 [restartedMain] INFO  (HikariDataSource.java:123) - HikariPool-11 - Start completed.
+2023-09-02T22:48:48,805 [restartedMain] INFO  (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-09-02T22:48:48,866 [restartedMain] INFO  (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-02T22:48:48,867 [restartedMain] INFO  (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-02T22:48:48,950 [restartedMain] WARN  (JpaBaseConfiguration.java:219) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-02T22:48:48,979 [restartedMain] INFO  (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
+2023-09-02T22:48:49,008 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8443"]
+2023-09-02T22:48:49,009 [restartedMain] INFO  (TomcatWebServer.java:220) - Tomcat started on port(s): 8443 (http) with context path ''
+2023-09-02T22:48:49,045 [restartedMain] INFO  (StartupInfoLogger.java:61) - Started HdfcBbpsApplication in 0.508 seconds (JVM running for 871.322)
+2023-09-02T22:48:49,046 [restartedMain] INFO  (ConditionEvaluationDeltaLoggingListener.java:63) - Condition evaluation unchanged
+2023-09-02T22:48:59,856 [http-nio-8443-exec-2] INFO  (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-02T22:48:59,856 [http-nio-8443-exec-2] INFO  (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+2023-09-02T22:48:59,858 [http-nio-8443-exec-2] INFO  (FrameworkServlet.java:547) - Completed initialization in 1 ms
+2023-09-02T22:48:59,937 [http-nio-8443-exec-2] INFO  (HikariDataSource.java:110) - HikariPool-12 - Starting...
+2023-09-02T22:48:59,940 [http-nio-8443-exec-2] INFO  (HikariDataSource.java:123) - HikariPool-12 - Start completed.
+2023-09-02T22:48:59,974 [http-nio-8443-exec-2] INFO  (payuController.java:182) - com.shubham.bbps.dto.PayuFetchResponse@422de6f4
+2023-09-02T22:51:27,502 [Thread-31] INFO  (HikariDataSource.java:350) - HikariPool-12 - Shutdown initiated...
+2023-09-02T22:51:27,503 [Thread-31] INFO  (HikariDataSource.java:352) - HikariPool-12 - Shutdown completed.
+2023-09-02T22:51:27,504 [Thread-31] INFO  (AbstractEntityManagerFactoryBean.java:651) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-02T22:51:27,504 [Thread-31] INFO  (HikariDataSource.java:350) - HikariPool-11 - Shutdown initiated...
+2023-09-02T22:51:27,506 [Thread-31] INFO  (HikariDataSource.java:352) - HikariPool-11 - Shutdown completed.
+2023-09-02T22:51:27,555 [restartedMain] INFO  (StartupInfoLogger.java:55) - Starting HdfcBbpsApplication using Java 17.0.6 on DESKTOP-3E1BNCG with PID 13240 (C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master\target\classes started by USER in C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master)
+2023-09-02T22:51:27,555 [restartedMain] INFO  (SpringApplication.java:659) - No active profile set, falling back to default profiles: default
+2023-09-02T22:51:27,703 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-02T22:51:27,711 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:201) - Finished Spring Data repository scanning in 8 ms. Found 2 JPA repository interfaces.
+2023-09-02T22:51:27,753 [restartedMain] INFO  (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8443 (http)
+2023-09-02T22:51:27,754 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8443"]
+2023-09-02T22:51:27,754 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting service [Tomcat]
+2023-09-02T22:51:27,754 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.53]
+2023-09-02T22:51:27,765 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2023-09-02T22:51:27,766 [restartedMain] INFO  (ServletWebServerApplicationContext.java:290) - Root WebApplicationContext: initialization completed in 209 ms
+2023-09-02T22:51:27,783 [restartedMain] INFO  (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-02T22:51:27,791 [restartedMain] INFO  (HikariDataSource.java:110) - HikariPool-13 - Starting...
+2023-09-02T22:51:27,793 [restartedMain] INFO  (HikariDataSource.java:123) - HikariPool-13 - Start completed.
+2023-09-02T22:51:27,794 [restartedMain] INFO  (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-09-02T22:51:27,837 [restartedMain] INFO  (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-02T22:51:27,837 [restartedMain] INFO  (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-02T22:51:27,913 [restartedMain] WARN  (JpaBaseConfiguration.java:219) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-02T22:51:27,942 [restartedMain] INFO  (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
+2023-09-02T22:51:27,964 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8443"]
+2023-09-02T22:51:27,966 [restartedMain] INFO  (TomcatWebServer.java:220) - Tomcat started on port(s): 8443 (http) with context path ''
+2023-09-02T22:51:27,998 [restartedMain] INFO  (StartupInfoLogger.java:61) - Started HdfcBbpsApplication in 0.459 seconds (JVM running for 1030.276)
+2023-09-02T22:51:27,999 [restartedMain] INFO  (ConditionEvaluationDeltaLoggingListener.java:63) - Condition evaluation unchanged
+2023-09-02T22:52:22,435 [Thread-35] INFO  (AbstractEntityManagerFactoryBean.java:651) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-02T22:52:22,435 [Thread-35] INFO  (HikariDataSource.java:350) - HikariPool-13 - Shutdown initiated...
+2023-09-02T22:52:22,437 [Thread-35] INFO  (HikariDataSource.java:352) - HikariPool-13 - Shutdown completed.
+2023-09-02T22:52:22,483 [restartedMain] INFO  (StartupInfoLogger.java:55) - Starting HdfcBbpsApplication using Java 17.0.6 on DESKTOP-3E1BNCG with PID 13240 (C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master\target\classes started by USER in C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master)
+2023-09-02T22:52:22,483 [restartedMain] INFO  (SpringApplication.java:659) - No active profile set, falling back to default profiles: default
+2023-09-02T22:52:22,600 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-02T22:52:22,607 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:201) - Finished Spring Data repository scanning in 7 ms. Found 2 JPA repository interfaces.
+2023-09-02T22:52:22,646 [restartedMain] INFO  (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8443 (http)
+2023-09-02T22:52:22,647 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8443"]
+2023-09-02T22:52:22,647 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting service [Tomcat]
+2023-09-02T22:52:22,648 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.53]
+2023-09-02T22:52:22,668 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2023-09-02T22:52:22,668 [restartedMain] INFO  (ServletWebServerApplicationContext.java:290) - Root WebApplicationContext: initialization completed in 183 ms
+2023-09-02T22:52:22,687 [restartedMain] INFO  (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-02T22:52:22,690 [restartedMain] INFO  (HikariDataSource.java:110) - HikariPool-14 - Starting...
+2023-09-02T22:52:22,693 [restartedMain] INFO  (HikariDataSource.java:123) - HikariPool-14 - Start completed.
+2023-09-02T22:52:22,693 [restartedMain] INFO  (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-09-02T22:52:22,740 [restartedMain] INFO  (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-02T22:52:22,740 [restartedMain] INFO  (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-02T22:52:22,809 [restartedMain] WARN  (JpaBaseConfiguration.java:219) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-02T22:52:22,836 [restartedMain] INFO  (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
+2023-09-02T22:52:22,860 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8443"]
+2023-09-02T22:52:22,862 [restartedMain] INFO  (TomcatWebServer.java:220) - Tomcat started on port(s): 8443 (http) with context path ''
+2023-09-02T22:52:22,904 [restartedMain] INFO  (StartupInfoLogger.java:61) - Started HdfcBbpsApplication in 0.434 seconds (JVM running for 1085.181)
+2023-09-02T22:52:22,905 [restartedMain] INFO  (ConditionEvaluationDeltaLoggingListener.java:63) - Condition evaluation unchanged
+2023-09-02T22:52:26,322 [Thread-39] INFO  (AbstractEntityManagerFactoryBean.java:651) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-02T22:52:26,322 [Thread-39] INFO  (HikariDataSource.java:350) - HikariPool-14 - Shutdown initiated...
+2023-09-02T22:52:26,324 [Thread-39] INFO  (HikariDataSource.java:352) - HikariPool-14 - Shutdown completed.
+2023-09-02T22:52:26,372 [restartedMain] INFO  (StartupInfoLogger.java:55) - Starting HdfcBbpsApplication using Java 17.0.6 on DESKTOP-3E1BNCG with PID 13240 (C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master\target\classes started by USER in C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master)
+2023-09-02T22:52:26,373 [restartedMain] INFO  (SpringApplication.java:659) - No active profile set, falling back to default profiles: default
+2023-09-02T22:52:26,508 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-02T22:52:26,516 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:201) - Finished Spring Data repository scanning in 7 ms. Found 2 JPA repository interfaces.
+2023-09-02T22:52:26,554 [restartedMain] INFO  (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8443 (http)
+2023-09-02T22:52:26,554 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8443"]
+2023-09-02T22:52:26,555 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting service [Tomcat]
+2023-09-02T22:52:26,555 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.53]
+2023-09-02T22:52:26,564 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2023-09-02T22:52:26,565 [restartedMain] INFO  (ServletWebServerApplicationContext.java:290) - Root WebApplicationContext: initialization completed in 191 ms
+2023-09-02T22:52:26,581 [restartedMain] INFO  (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-02T22:52:26,584 [restartedMain] INFO  (HikariDataSource.java:110) - HikariPool-15 - Starting...
+2023-09-02T22:52:26,586 [restartedMain] INFO  (HikariDataSource.java:123) - HikariPool-15 - Start completed.
+2023-09-02T22:52:26,587 [restartedMain] INFO  (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-09-02T22:52:26,631 [restartedMain] INFO  (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-02T22:52:26,631 [restartedMain] INFO  (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-02T22:52:26,697 [restartedMain] WARN  (JpaBaseConfiguration.java:219) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-02T22:52:26,724 [restartedMain] INFO  (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
+2023-09-02T22:52:26,744 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8443"]
+2023-09-02T22:52:26,746 [restartedMain] INFO  (TomcatWebServer.java:220) - Tomcat started on port(s): 8443 (http) with context path ''
+2023-09-02T22:52:26,783 [restartedMain] INFO  (StartupInfoLogger.java:61) - Started HdfcBbpsApplication in 0.428 seconds (JVM running for 1089.061)
+2023-09-02T22:52:26,784 [restartedMain] INFO  (ConditionEvaluationDeltaLoggingListener.java:63) - Condition evaluation unchanged
+2023-09-02T22:52:28,588 [http-nio-8443-exec-2] INFO  (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-02T22:52:28,588 [http-nio-8443-exec-2] INFO  (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+2023-09-02T22:52:28,589 [http-nio-8443-exec-2] INFO  (FrameworkServlet.java:547) - Completed initialization in 1 ms
+2023-09-02T22:52:28,655 [http-nio-8443-exec-2] INFO  (HikariDataSource.java:110) - HikariPool-16 - Starting...
+2023-09-02T22:52:28,657 [http-nio-8443-exec-2] INFO  (HikariDataSource.java:123) - HikariPool-16 - Start completed.
+2023-09-02T22:52:28,686 [http-nio-8443-exec-2] INFO  (payuController.java:184) - com.shubham.bbps.dto.PayuFetchResponse@1dbd9b62
+2023-09-02T22:56:17,524 [http-nio-8443-exec-5] INFO  (payuController.java:184) - com.shubham.bbps.dto.PayuFetchResponse@1962e3c7
+2023-09-02T22:57:29,864 [Thread-43] INFO  (HikariDataSource.java:350) - HikariPool-16 - Shutdown initiated...
+2023-09-02T22:57:29,865 [Thread-43] INFO  (HikariDataSource.java:352) - HikariPool-16 - Shutdown completed.
+2023-09-02T22:57:29,866 [Thread-43] INFO  (AbstractEntityManagerFactoryBean.java:651) - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-02T22:57:29,866 [Thread-43] INFO  (HikariDataSource.java:350) - HikariPool-15 - Shutdown initiated...
+2023-09-02T22:57:29,867 [Thread-43] INFO  (HikariDataSource.java:352) - HikariPool-15 - Shutdown completed.
+2023-09-02T22:57:29,918 [restartedMain] INFO  (StartupInfoLogger.java:55) - Starting HdfcBbpsApplication using Java 17.0.6 on DESKTOP-3E1BNCG with PID 13240 (C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master\target\classes started by USER in C:\Users\USER\Downloads\spring-boot-mysql-rest-api-tutorial-master\spring-boot-mysql-rest-api-tutorial-master)
+2023-09-02T22:57:29,918 [restartedMain] INFO  (SpringApplication.java:659) - No active profile set, falling back to default profiles: default
+2023-09-02T22:57:30,040 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:132) - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-02T22:57:30,049 [restartedMain] INFO  (RepositoryConfigurationDelegate.java:201) - Finished Spring Data repository scanning in 8 ms. Found 2 JPA repository interfaces.
+2023-09-02T22:57:30,091 [restartedMain] INFO  (TomcatWebServer.java:108) - Tomcat initialized with port(s): 8443 (http)
+2023-09-02T22:57:30,092 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8443"]
+2023-09-02T22:57:30,092 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting service [Tomcat]
+2023-09-02T22:57:30,092 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.53]
+2023-09-02T22:57:30,114 [restartedMain] INFO  (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2023-09-02T22:57:30,114 [restartedMain] INFO  (ServletWebServerApplicationContext.java:290) - Root WebApplicationContext: initialization completed in 195 ms
+2023-09-02T22:57:30,128 [restartedMain] INFO  (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-02T22:57:30,130 [restartedMain] INFO  (HikariDataSource.java:110) - HikariPool-17 - Starting...
+2023-09-02T22:57:30,132 [restartedMain] INFO  (HikariDataSource.java:123) - HikariPool-17 - Start completed.
+2023-09-02T22:57:30,133 [restartedMain] INFO  (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-09-02T22:57:30,171 [restartedMain] INFO  (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-02T22:57:30,173 [restartedMain] INFO  (AbstractEntityManagerFactoryBean.java:437) - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-02T22:57:30,236 [restartedMain] WARN  (JpaBaseConfiguration.java:219) - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-02T22:57:30,265 [restartedMain] INFO  (OptionalLiveReloadServer.java:58) - LiveReload server is running on port 35729
+2023-09-02T22:57:30,284 [restartedMain] INFO  (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8443"]
+2023-09-02T22:57:30,287 [restartedMain] INFO  (TomcatWebServer.java:220) - Tomcat started on port(s): 8443 (http) with context path ''
+2023-09-02T22:57:30,320 [restartedMain] INFO  (StartupInfoLogger.java:61) - Started HdfcBbpsApplication in 0.417 seconds (JVM running for 1392.598)
+2023-09-02T22:57:30,321 [restartedMain] INFO  (ConditionEvaluationDeltaLoggingListener.java:63) - Condition evaluation unchanged
+2023-09-02T22:58:51,552 [http-nio-8443-exec-1] INFO  (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-02T22:58:51,552 [http-nio-8443-exec-1] INFO  (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+2023-09-02T22:58:51,553 [http-nio-8443-exec-1] INFO  (FrameworkServlet.java:547) - Completed initialization in 1 ms
+2023-09-02T23:05:35,883 [http-nio-8443-exec-4] ERROR (payuController.java:222) - com.shubham.bbps.dto.Error@3535c3f9
+2023-09-02T23:07:40,491 [http-nio-8443-exec-7] ERROR (payuController.java:222) - com.shubham.bbps.dto.Error@6d781060
+2023-09-02T23:08:23,571 [http-nio-8443-exec-8] ERROR (payuController.java:222) - com.shubham.bbps.dto.Error@4e7cc12
+2023-09-02T23:08:31,132 [http-nio-8443-exec-9] ERROR (payuController.java:222) - com.shubham.bbps.dto.Error@13384eb7
+2023-09-02T23:09:02,798 [http-nio-8443-exec-10] INFO  (payuController.java:251) - com.shubham.bbps.dto.ResponsePayment@e554db
+2023-09-02T23:13:49,682 [http-nio-8443-exec-3] INFO  (payuController.java:344) - com.shubham.bbps.dto.ResponseReceipt@21f499ed
+2023-09-02T23:19:02,928 [http-nio-8443-exec-6] INFO  (payuController.java:344) - com.shubham.bbps.dto.ResponseReceipt@3f3d04c8
+2023-09-02T23:19:58,693 [http-nio-8443-exec-7] INFO  (payuController.java:344) - com.shubham.bbps.dto.ResponseReceipt@fd416a4
+2023-09-02T23:20:39,409 [http-nio-8443-exec-8] INFO  (payuController.java:344) - com.shubham.bbps.dto.ResponseReceipt@4a534417
+2023-09-02T23:21:17,348 [http-nio-8443-exec-9] INFO  (payuController.java:344) - com.shubham.bbps.dto.ResponseReceipt@6dd451fb
